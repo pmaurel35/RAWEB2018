@@ -1,0 +1,1405 @@
+
+%%%
+%%% iTrameRA : Trame pour le Rapport d'Activité Inria 2018
+%%% ------------------------------------------------------
+%%%  
+%%% Url de la trame : http://irabot.inria.fr/itramera?projet=visages
+%%%
+%%% ----------------
+
+%%%  Nouveautés ou rappels 2018 !
+%%% ----------------
+%%% - Personnes : mettez à jour https://gef.inria.fr/ (assistante) pour obtenir des imports corrects pour les mots-clés et le RA
+%%% - Mots-clés : mots-clés équipe et personnes à renseigner dans https://bastri.inria.fr/FichesProjets/  - Etape nécessaire pour pouvoir déposer le RA
+%%% - Logiciels : à renseigner dans BIL https://bil.inria.fr/fr/catalog/listby/raweb avant l'import dans le RA. Les modifications sont à faire dans BIL, ce n'est pas possible dans le RA.
+%%% - Médiation : un rubricage fin des activités vous est proposé dans la section Dissemination
+
+%%% ------------------
+%%% Ce document est un squelette de rapport d'activité  
+%%% mis à jour à partir des bases de données de l'Inria
+%%% (HAL pour les publis, BASTRI pour les équipes, FicheProjet pour les mots-clés, BIL pour les logiciels, l'entrepôt pour les données DPEI ...).
+%%% Le rédacteur doit compléter ce document.  
+%%%
+%%% Marche à suivre :
+%%%
+%%% Récuperer l'archive tgz de 2018 et la décompresser  dans un répertoire.  
+%%% Il y a un fichier tex et 3 fichiers de bibliographie (.bib) :  
+%%% - visages2018.tex : le texte en latex du rapport  
+%%% - visages2018.bib : les publis de l'année 2018 issues de Hal
+%%% - visages_refer2018.bib : les publications de référence (c'est-a-dire les 10 publis les plus importantes
+%%%   de l'équipe quelle que soit l'année)
+%%% - visages_foot2018.bib : les publis placées dans les notes de bas de page (footnote) issues de votre rapport 2017
+%%%
+%%% Instructions pour l'écriture du RA :
+%%%
+%%% https://intranet.inria.fr/Vie-scientifique/Information-edition-scientifiques/Comment-rediger-le-RAweb/Rediger-le-RA-Objectifs-et-actualites
+%%%
+%%% Pour compiler puis déposer le rapport utiliser le serveur iRAbot :  
+%%%
+%%% http://irabot.inria.fr/irabot
+%%%
+%%% ou bien le script irabot.sh qui utilise iRAbot.
+%%%
+%%% Le rapport est en ANGLAIS !
+%%%
+
+
+\documentclass{ra2018}
+
+%SKEL - v0.4 - 2018 (Utiliser pour les stats d'utilisation de Skel, merci de ne effacer cette ligne)
+
+% ne pas enlever  
+\renewenvironment{motscle}{\begin{xmlelement}{keywords}}{\end{xmlelement}}
+
+%%% Par defaut sont inclus les packages : html, french, graphics et footbib  
+%%% (ifthen curves soul epsf html)
+%%% Le plus souvent la commande \usepackage n'est pas prise en compte  
+%%% Mais si le package est calc ou fp certaines commandes sont rendues disponibles
+%%% (fancyvrb)  
+
+%%% Mettez ici les \newcommand et \def que vous voulez
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%
+%%%  Information sur les données importées : Bastri
+%%%
+%%% L'acronyme de votre équipe et le CRI sont présentés comme dans les fiches projets.
+%%% Si vous souhaitez les modifier, faites-le dans la base de gestion des fiches projets :
+%%% https://bastri.inria.fr/FichesProjets/ et régénérez votre trame.
+
+%%% Les organismes ou écoles partenaires de votre équipe, les labos auxquels
+%%% vous êtes associés ainsi que thème et domaine de rattachement sont récupérés automatiquement à chaque compilation.
+%%%. Ces infos sont issues de Bastri :  https://bastri.inria.fr, la base des structures de recherche Inria.
+%%%
+%%% Le "moreinfo" de l'équipe servira donc uniquement à préciser la localisation  
+%%% quand elle est distincte du CRI (pour ceux qui le souhaitent).  
+%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%
+%%%  Information sur les données importées : Cartographie
+%%% Cartographie de l'activité : chaque équipe et chaque membre d'équipe doit renseigner les mots-clés 2018 décrivant son activité dans https://bastri.inria.fr/FichesProjets/.  
+%%% Le RA importe les mots-clés équipe. Ils sont visibles dans le RA *10 à 15 mn* après la validation dans https://bastri.inria.fr/FichesProjets/.  
+%%% Le dépôt du RA est impossible tant que les mots-clés ne sont pas validés.
+%%% Documentation intranet : https://intranet.inria.fr/Vie-scientifique/Information-edition-scientifiques/RAweb/Consignes-generales#eztoc26917_4
+  
+%%% Vérifiez et signalez erreurs et problèmes sur le Helpdesk : https://helpdesk.inria.fr/categories/181/submit
+%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+%%% \projet{<PROJET>}{<ALT-ABRÉGÉ>}{<NOM-PROJET-EXPLICITÉ>}
+%%% exemple :  
+%%% \projet{EXEMPLE}{ExemplE}{Algebraic Systems for Research and Industry}  
+%%%
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Informations concernant l'equipe extraites de BASTRI
+% Source : http://bastri.inria.fr/
+% Date : jeudi 22 novembre 2018, 15:00:58 (UTC+0100)
+%
+
+\projet{VISAGES}{visages}{Vision, Action and information manaGement System in health}
+
+%% Pour information le domaine et le theme du projet 
+%% Domaine : Digital Health, Biology and Earth
+%% Theme : Computational Neuroscience and Medicine
+
+
+%%% CRI Inria  
+%%% Sophia, ou Paris, ou Nancy, si le projet est bilocalisé : \UR{cr1,cr2} etc
+
+\UR{Rennes}
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+\maketitle
+
+
+%%% Pour ceux qui le souhaitent le moreinfo permet d'insérer un texte
+%%% de 3 - 4 lignes qui indique les particularités de l'équipe.
+%%% Ne doublonnez pas thème, domaine, CRI et partenariats qui sont ajoutés automatiquement.  
+
+%%\begin{moreinfo}
+%%ICI Vous pouvez ecrire du texte
+
+
+%%\end{moreinfo}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%
+%%% Liste des modules possibles pour les sections :
+%%% composition presentation fondements domaine highlights logiciels resultats contrats partenariat diffusion
+%%%
+%%% ex : \begin{module}{composition}
+%%%
+%%% \begin{module} {<SECTION>} {<NOMMODULE>} {<TITRE>}
+%%%     <PERSONNES>  
+%%%    [<GLOSSAIRE>]  
+%%%    [<MOREINFO>]  
+%%%    [<RESUME>]  
+%%%    <CORPS>
+%%% \end{module}
+%%%
+%%%
+%%% NOMMODULE est un identifiant unique pour repérer le module,
+%%% aussi chaque module doit en avoir un NOMMODULE différent.  
+%%%
+%%% \begin{module}{logiciels}{calcul-formel}{Sofrware aspects of Computer Algebra}
+%%%  \begin{participants}
+%%%  format: \pers <PRENOM> [<PARTICULE>] <NOM> [<MOREINFO>]
+%%%        \pers{Jean}[de]{La Fontaine}[1621-1695],
+%%%        \pers{Cecil Blount}{De Mille}
+%%%  \end{participants}
+%%%  \begin{glossaire}
+%%%       \glo{backward combatability}{A property of hardware or software
+%%%   ... but activeliy... }
+%%%  \end{glossaire}
+%%%  \begin{abstract}
+%%%       Le joli résumé que voilà
+%%%  \end{abstact}  
+%%%  This is a very short module with a hypertext link to the
+%%%  \href{http://www.eps.mcgill.ca/jargon/jargon.html}{Jargon File}.
+%%% \end{module}
+%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%
+%%% Composition de l'équipe
+%%%
+%%% Professions possibles :
+%%% Chercheur Enseignant PostDoc PhD Technique Stagiaire Assistant Visiteur CollaborateurExterieur
+%%%  
+%%% Utiliser le mot-clé [Habilite] pour les titulaires d'une Thèse d'État ou d'une HDR
+%%%
+%%%       \pers{Prénom}{Nom}{profession}[champ_libre: Employeur, Fonction, until/since, financement, info supplémentaire][Habilite]?
+%%%        ...
+%%%
+%%% La mention "Team leader" est précisée dans le champ libre (moreinfo) et pré-remplie par l'export GEF.
+%%%
+%%% Dans le champ libre, si vous indiquez le grade (donnée importée si elle est dans Gef), écrivez :
+%%%    
+%%%   Pour DR : Senior Researcher  
+%%%   Pour CR : Researcher
+%%%   Pour Advanced Research position : Advanced Research position
+%%%   Pour Starting Research position : Starting Research position
+%%%   Pour Professeur : Professor ou Prof
+%%%   Pour Maitre de conférence : Associate Professor
+%%%   Pour les chercheurs émérites : Emeritus
+
+%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%
+%%% Information sur les données importées : les membres de l'équipe sont importés de GEF
+%%%  
+%%% Tous les membres de l'équipe doivent être dans GEF  
+%%% Ajoutez et corrigez les noms dans https://gef.inria.fr et régénérez la trame.
+%%% Les infos de financement viennent de la base Safin et la graphie des noms des responsables d'équipe de Bastri.
+%%% La mention "Team leader" est exportée dans le champ libre (moreinfo), de même que l'employeur (à vérifier)
+%%% Vérifiez et signalez erreurs et problèmes dans le Helpdesk : https://helpdesk.inria.fr/categories/181/submit
+ %%%Documentation intranet : https://intranet.inria.fr/Vie-scientifique/Information-edition-scientifiques/Comment-rediger-le-RAweb/Les-sections#eztoc27554_2
+%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%  
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Donnees  construites d'aprÃ¨s les informations de la base GEF pour 2018
+% Source : https://gef.inria.fr/
+% Date : jeudi 22 novembre 2018, 15:00:58 (UTC+0100)
+%
+
+\begin{composition}
+\pers{Christian}{Barillot}{Chercheur}[CNRS, Senior Researcher][Habilite]
+\pers{Emmanuel}{Caruyer}{Chercheur}[CNRS, Researcher]
+\pers{Julie}{Coloigner}{Chercheur}[CNRS, Researcher, from Oct 2018]
+\pers{Olivier}{Commowick}{Chercheur}[Inria, Researcher]
+\pers{Camille}{Maumet}{Chercheur}[Inria, Researcher]
+\pers{Isabelle}{Bonan}{Enseignant}[Univ de Rennes I, Professor][Habilite]
+\pers{Gilles}{Edan}{Enseignant}[Univ de Rennes I, Professor]
+\pers{Jean-Christophe}{Ferré}{Enseignant}[Univ de Rennes I, Professor][Habilite]
+\pers{Jean-Yves}{Gauvrit}{Enseignant}[Univ de Rennes I, Professor][Habilite]
+\pers{Pierre}{Maurel}{Enseignant}[Univ de Rennes I, Associate Professor]
+\pers{Sudhanya}{Chatterjee}{PhD}[Univ de Rennes I]
+\pers{Mathis}{Fleury}{PhD}[Inria]
+\pers{Pierre-Yves}{Jonin}{PhD}[Centre hospitalier régional et universitaire de Rennes]
+\pers{Anne}{Kerbrat}{PhD}[Centre hospitalier régional et universitaire de Rennes, until Oct 2018]
+\pers{Antoine}{Legouhy}{PhD}[CNRS]
+\pers{Stephanie}{Leplaideur}{PhD}[Centre hospitalier régional et universitaire de Rennes]
+\pers{Cédric}{Meurée}{PhD}[\_\_\_EMPLOYEUR???\_\_\_]
+\pers{Maia}{Proisy}{PhD}[Centre hospitalier régional et universitaire de Rennes, until Oct 2018]
+\pers{Xavier}{Rolland}{PhD}[CNRS, from Oct 2018]
+\pers{Haykel}{Snoussi}{PhD}[Inria]
+\pers{Raphael}{Truffet}{PhD}[Univ de Rennes I, from Oct 2018]
+\pers{Corentin}{Vallée}{PhD}[Univ de Rennes I]
+\pers{Élise}{Bannier}{Technique}[Centre hospitalier régional et universitaire de Rennes]
+\pers{Yao}{Chi}{Technique}[Inria, until Nov 2018]
+\pers{Julie}{Coloigner}{Technique}[Inria, until Sep 2018]
+\pers{Benoit}{Combès}{Technique}[Inria]
+\pers{Isabelle}{Corouge}{Technique}[Univ de Rennes I]
+\pers{Claire}{Cury}{Technique}[Inria]
+\pers{Quentin}{Duché}{Technique}[Inria]
+\pers{Inès}{Fakhfakh}{Technique}[Inria, until Feb 2018]
+\pers{Francesca}{Galassi}{Technique}[Inria]
+\pers{Michael}{Kain}{Technique}[Inria, until Nov 2018, granted by CEA]
+\pers{Florent}{Leray}{Technique}[Inria, until Feb 2018]
+\pers{Giulia}{Lioi}{Technique}[Inria]
+\pers{Aneta}{Morawin}{Technique}[Inria, until Aug 2018]
+\pers{Mathieu}{Simon}{Technique}[Inria, until Jan 2018]
+\pers{Arnaud}{Touboulic}{Technique}[Inria, until Oct 2018]
+\pers{Abir}{Affane}{Stagiaire}[Univ de Rennes I, from Apr 2018 until Sep 2018]
+\pers{Simon}{Butet}{Stagiaire}[Centre hospitalier régional et universitaire de Rennes, from Feb 2018 until Jul 2018]
+\pers{Raphael}{Chouteau}{Stagiaire}[Univ de Rennes I, from Feb 2018 until Oct 2018]
+\pers{Leonie}{Chretien}{Stagiaire}[Univ de Rennes I, from May 2018 until Aug 2018]
+\pers{Rui}{Dai}{Stagiaire}[Univ de Rennes I, from Mar 2018 until Aug 2018]
+\pers{Charlotte}{Laurent}{Stagiaire}[Centre hospitalier régional et universitaire de Rennes, from Feb 2018 until Aug 2018]
+\pers{Solene}{Tarride}{Stagiaire}[Univ de Rennes I, from Apr 2018 until Oct 2018]
+\pers{Raphael}{Truffet}{Stagiaire}[Ecole normale supérieure de Rennes, from Feb 2018 until Jun 2018]
+\pers{Armelle}{Mozziconacci}{Assistant}[CNRS]
+\pers{Alice}{Bates}{Visiteur}[Inria, Oct 2018]
+\pers{Jean-Marie}{Batail}{CollaborateurExterieur}[Centre hospitalier régional et universitaire de Rennes, until Feb 2018]
+\pers{Florence}{Le Jeune}{CollaborateurExterieur}[Univ de Rennes I]
+\pers{Gabriel}{Robert}{CollaborateurExterieur}[Univ de Rennes I]
+\end{composition}
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%
+%%% Section presentation (Overall Objectives)
+%%% On peut mettre un ou plusieurs modules.
+%%%  
+%%% La partie présentation du projet est issue de la section "Overall Objectives" du RAweb 2017  
+%%% source : http://raweb.inria.fr/rapportsactivite/2017/visages/uid0.html
+%%%
+%%%Documentation intranet : https://intranet.inria.fr/Vie-scientifique/Information-edition-scientifiques/Comment-rediger-le-RAweb/Les-sections#eztoc27554_5
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% PrÃ©sentation du projet issues des informations du RAweb 2017
+% Source : http://raweb.inria.fr/rapportsactivite/RA2017/visages/uid3.html
+% Date : jeudi 22 novembre 2018, 15:00:58 (UTC+0100)
+%
+
+
+        \begin{module}{presentation}{presentation}{Overall objectives}
+        \label{sec:overall}
+        %%%%%%%\begin{motscle}
+        \emph{
+          Medical Imaging, 
+          Neuroinformatics, 
+          Neuroimaging, 
+          Medical Image Computing, 
+          Modeling of normal and pathological behavior of the human brain,
+          e-health \& HealthGrids
+        }
+        %%%%
+        %
+        %
+%\end{motscle}
+        
+        The Unit/Project \textsc{VisAGeS} U1228 is a research team jointly affiliated to
+        INSERM (National Institute of Health and Scientific Research), Inria (National
+        Institute of Research in Computer Sciences and Automation) and IRISA / UMR CNRS
+        6074, University of Rennes I. We are located in Rennes, France on both medical
+        and sciences campus. The team was created in 2005. Our ambition is to set
+        up a multidisciplinary team merging researchers in image processing and medical
+        doctors.  The goal of \textsc{VisAGeS} is to constitute a multidisciplinary
+        team. Even though, research in medical imaging could find motivation and
+        recognition based on methodological breakthroughs alone, the ultimate goal,
+        when dealing with medical imaging research, is to make the clinical practice
+        benefit from the basic and applied research, while keeping the excellence of
+        the methodological research. This objective entails the creation of teams
+        encompassing clinical and scientific researchers to design and conduct research
+        projects together. Our aim through the past period was to build a research team
+        able to perform a research going from a novel and basic stage to original
+        clinical experimentation with clear medical impact.
+        
+        Our research activities are focused on the research and development of new
+        algorithms in medical imaging in the context of the pathologies of the central
+        nervous system. In this context, we are addressing the general problems of the
+        improved understanding of normal and pathological brain organs and systems
+        behavior, at different scales, as well as the promotion and the support of Virtual
+        Organizations of biomedical actors by means of healthgrid's technologies.  The
+        medical application objectives are focused on pathologies of the central
+        nervous system, with a particular effort on extraction of new imaging
+        biomarkers for brain pathologies (e.g., Multiple Sclerosis, neuropaediatrics,
+        stroke, psychiatry, ...). More generally, our application objectives concern
+        the following diseases: Multiple sclerosis, epilepsy, dementia,
+        neuro-degenerative brain diseases, brain vascular diseases.
+        
+
+        \end{module}
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%
+%%% Module fondements (Research Program)
+%%%
+%%% Ce module fondements va apparaitre dans le rapport en html et en pdf sous le titre "Research Program".
+%%%
+%%% Cette section sert à mentionner le contexte scientifique qui est à la base de votre programme  
+%%% puis à préciser les différentes thématiques que vous abordez au sein de votre équipe-projet.  
+%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+        \begin{module}{fondements}{Scientific-Foundations}{}
+        %\label{sec:scientific}
+        
+        The scientific foundations of our team concern the  development of new
+        processing algorithms in the field of medical image computing : image fusion
+        (registration and visualization), image segmentation and analysis, management
+        of image related information. Since this is a very large domain, which can
+        be applied on numerous types of application; for seek of efficiency, the purpose of
+        our methodological work primarily focuses on clinical aspects and for the most
+        part on head and neck related diseases. In addition, we emphasize our research
+        efforts on the neuroimaging domain. Concerning the scientific foundations, we
+        have  pushed our research efforts: 
+        
+        \begin{itemize}
+          \item In the field of image fusion and image registration (rigid and
+          deformable transformations) with a special emphasis on new challenging
+          registration issues, especially when statistical approaches based on joint
+          histogram cannot be used or when the registration stage has to cope with loss
+          or appearance of material (like in surgery or in tumor imaging for instance).  
+          \item In the field of image analysis and statistical modeling with a new
+          focus on image feature and group analysis problems. A special attention was
+          also to develop advanced frameworks for the construction of atlases and for
+          automatic and supervised labeling of brain structures. 
+          \item In the field of image segmentation and structure recognition, with a
+          special emphasis on the difficult problems of \emph{i}) image restoration for
+          new imaging sequences (new Magnetic Resonance Imaging protocols, 3D
+          ultrasound sequences...), and \emph{ii}) structure segmentation and labelling
+          based on shape, multimodal and statistical information.
+          \item Following past national projects where we had leading roles (e.g., Neurobase, NeuroLog,
+        . . . ), we wanted to enhance the development of distributed and heterogeneous medical image
+        processing systems.
+        \end{itemize}
+        
+        \begin{figure}[htbp]
+          \centerline{
+            \includegraphics[width=\textwidth]{IMG/OverallObjectives}
+          }
+          \caption{
+            The major overall scientific foundation of the team concerns the
+            integration of data from the Imaging source to the patient at different
+            scales: from the cellular or molecular level describing the structure and
+            function, to the functional and structural level of brain structures and
+            regions, to the population level for the modelling of group patterns and
+            the learning of group or individual imaging markers.
+          }
+          \label{fig-objectives}
+        \end{figure}
+        
+        As shown in Fig.~\ref{fig-objectives}, research activities of the
+        \textsc{VisAGeS} U1228 team are tightly coupling observations and models through
+        integration of clinical and multi-scale data, phenotypes (cellular, molecular
+        or structural patterns). We work on personalized models of central nervous
+        system organs and pathologies, and intend to confront these models to clinical
+        investigation studies for quantitative diagnosis, prevention of diseases,
+        therapy planning and validation. These approaches are developed in a
+        translational framework where the data integration process to build the models
+        inherits from specific clinical studies, and where the models are assessed on
+        prospective clinical trials for diagnosis and therapy planning. All of this
+        research activity is conducted in tight links with the
+        \href{http://www.neurinfo.org}{Neurinfo} imaging platform environments and the
+        engineering staff of the platform. In this context, some of our major
+        challenges in this domain  concern:
+        
+        \begin{itemize}
+          \item The elaboration of new descriptors to study the brain structure and
+          function (e.g., variation of brain perfusion with and without contrast agent,
+          evolution in shape and size of an anatomical structure in relation with
+          normal, pathological or functional patterns, computation of asymmetries from
+          shapes and volumes).
+          \item The integration of additional spatio-temporal imaging sequences
+          covering a larger range of observation, from the molecular level to the organ
+          through the cell (Arterial Spin Labeling, diffusion MRI, MR relaxometry, MR
+          cell labeling imaging, PET molecular imaging, …). This includes the
+          elaboration of new image descriptors coming from spatio-temporal quantitative
+          or contrast-enhanced MRI.
+          \item The creation of computational models through data fusion of molecular,
+          cellular, structural and functional image descriptors from group studies of
+          normal and/or pathological subjects.
+          \item The evaluation of these models on acute pathologies especially for the
+          study of degenerative, psychiatric or developmental brain diseases (e.g.,
+          Multiple Sclerosis, Epilepsy, Parkinson, Dementia, Strokes, Depression,
+          Schizophrenia, …) in a translational framework.
+        \end{itemize}
+        
+        In terms of methodological developments, we are particularly working on
+        statistical methods for multidimensional image analysis, and feature selection
+        and discovery, which include:
+        
+        \begin{itemize}
+          \item The development of specific shape and appearance models, construction
+          of atlases better adapted to a patient or a group of patients in order to
+          better characterize the pathology;
+          \item The development of advanced segmentation and modeling methods dealing
+          with longitudinal and multidimensional data (vector or tensor fields),
+          especially with the integration of new prior models to control the
+          integration of multiscale data and aggregation of models;
+          \item The development of new models and probabilistic methods to create water
+          diffusion maps from MRI;
+          \item The integration of machine learning procedures for classification and
+          labeling of multidimensional features (from scalar to tensor fields and/or
+          geometric features): pattern and rule inference and knowledge extraction are
+          key techniques to help in the elaboration of knowledge in the complex domains
+          we address;
+          \item The development of new dimensionality reduction techniques for problems
+          with massive data, which includes dictionary learning for sparse model
+          discovery. Efficient techniques have still to be developed to properly
+          extract from a raw mass of images derived data that are easier to analyze.
+        \end{itemize}
+        \end{module}
+
+
+
+\begin{module}{fondements}{test1}{LaTeX Test Page}
+
+%%% muni d'un titre, ce module apparaitra comme une sous-section
+
+Exemples d'équations :
+  
+\begin{itemize}
+\item Equation en mode ``mathématique'' :\\
+
+$y=x^2$  
+
+\item Equation en environnement ``equation'' : \\
+
+\begin{equation}
+  P \left(\begin{array} {c}
+     \theta_{1} \\ \vdots  \\ \theta_{r}  
+\end{array}
+  \right) = Q + R, \label{noisident1}
+\end{equation}
+
+\item Equation en environnement ``displaymath'' : \\
+
+\begin{displaymath}
+\sum_{0}^{\infty} y = x^4
+\end{displaymath}
+
+\item Autre exemple :  
+
+\[ \forall f\in C^\infty\left(\left[-\frac{T}{2};\frac{T}{2}\right]\right),
+   \forall t\in \left[-\frac{T}{2};\frac{T}{2}\right],
+   f(\tau) = \sum_{k = -\infty}^{+\infty} e^{2i\pi\frac{k}{T}t} \times
+   \underbrace{\frac{1}{T}
+               \int_{-\frac{T}{2}}^{\frac{T}{2}} f(t) e^{-2i\pi\frac{k}{T}t} dt
+              }_{a_k = \tilde{f}\left(\nu = \frac{k}{T}\right)}
+\]
+
+\end{itemize}  
+
+Exemple de caractères spéciaux : \\  
+
+math pi : $\pi$ \\
+
+lettres : æ Æ à À â Â ä Ä ç Ç é É è È ê Ê ë Ë î Î ï Ï ô Ô ö Ö ù Ù û Û ü Ü ÿ {\th} {\TH}
+
+Exemples d'images :
+  
+\begin{itemize}
+
+\item Image en jpeg : voir image \ref{fig:jpegimage} \\
+
+\begin{figure}
+\begin{center}
+\includegraphics[width=4cm]{IMG/imagejpeg}
+\end{center}
+\caption{An example of a jpeg image}
+\label{fig:jpegimage}
+\end{figure}
+
+\item  Image en eps : voir figure \ref{fig:completemap} \\  
+
+\begin{figure}
+\begin{center}
+\includegraphics{IMG/imageeps}
+\end{center}
+\caption{An example of an eps file}
+\label{fig:completemap}
+\end{figure}
+
+\item Image en pdf : voir image \ref{fig:pdffile} \\  
+
+%\begin{center}
+\begin{figure}
+\includegraphics[width=2cm]{IMG/imagepdf}
+\caption{An example of a pdf file}
+\label{fig:pdffile}
+\end{figure}
+%\end{center}
+
+\end{itemize}
+
+\end{module}
+
+
+%%% Un autre module dans la même section fondements  
+
+% \begin{module}{fondements}{ident2}{Identification2}
+% ...
+% \end{module}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%
+%%% Section domaine (Application Domains)
+%%% Il y a des modules ici
+%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{module}{domaine}{dom11}{Domain 1}
+
+%% ICI Vous pouvez écrire votre texte
+
+\end{module}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%
+%%% Section Highlights (Faits Marquants)
+%%%  
+%%% Les faits marquants doivent être relatifs aux résultats de l'année obtenus par votre équipe.
+%%% L'obtention d'une HDR n'est pas un fait marquant.
+%%% La sous-partie Awards (précédemment "Best papers") vous permet de signaler toute récompense, concernant une publication ou pas.  
+%%% Tous types de publication récompensée peuvent être présentés ici. La récompense doit dater de l'année, la publication pas forcément.
+%%% Citez-les dans la partie "Awards" sous la forme : \bestcite{xxxx}, \bestcite{yyyy}, ...  
+%%%
+%%% Documentation intranet : https://intranet.inria.fr/Vie-scientifique/Information-edition-scientifiques/RAweb/Les-sections#eztoc27554_8
+%%%  
+%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{module}{highlights}{NewHighlights}{}
+
+\subsection{Awards}
+
+%% ICI vous pouvez ecrire du texte
+%%
+%% citez les "Awards" sous la forme : \bestcite{xxxx}, \bestcite{yyyy}, ...
+
+\end{module}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%
+%%% Section logiciels et plateformes
+%%%
+%%%
+%%% Information sur les données importées : logiciels
+%%%  
+%%% Il n'est pas possible de modifier le tex de la partie logiciel de cette section : les logiciels sont importés de la base BIL.  
+%%% Il faut passer par BIL (https://bil.inria.fr/fr/catalog/listby/raweb) pour rajouter et compléter des logiciels.  
+%%% Critères de sélection des logiciels pour le RA : avoir été développé ou avoir connu une évolution majeure ou importante en 2018.
+%%% Le fichier tex du rapport est mis à jour automatiquement à chaque compilation.
+%%% Il faut ensuite consulter le rapport en HTML et/ou en PDF pour vérifier le résultat.
+%%%  
+%%% Par contre la partie pour les platformes doit toujours être mise à jour manuellement à partir de ce fichier tex.
+%%%
+%%% Documentation intranet : https://intranet.inria.fr/Vie-scientifique/Information-edition-scientifiques/RAweb/Les-sections#eztoc27554_9
+%%%
+%%% En cas de problème : https://helpdesk.inria.fr/categories/181/submit
+%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%
+%%% Ici la section logiciel va être incluse à la compilation    
+%%% Il est possible de consulter le source tex qui va être inclus à l'adresse suivante :  
+%%%     https://irabot.inria.fr/itramera?format=bil&epi=visages&annee=2018
+%%%
+%%%
+%%% La partie Plaforms de la section logiciels et plateformes doit, le cas échéant, être complétée ici :  
+%%%  
+
+ \begin{module}{logiciels}{plateformexemple}{Platforms}  
+ \subsection{Platform A}
+ ...
+ \subsection{Platform B}
+ ...
+ \end{module}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%
+%%% Section Resultat nouveaux (New Results)
+%%% Il y a des modules ici
+
+%%%Documentation intranet : https://intranet.inria.fr/Vie-scientifique/Information-edition-scientifiques/RAweb/Les-sections#eztoc27554_10
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{module}{resultats}{new1}{New result 1}
+%%ICI Vous pouvez ecrire du texte
+\end{module}
+
+
+%%\begin{module}{resultats}{new2}{New result 2}
+%%ICI Vous pouvez ecrire du texte
+%%\end{module}
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%
+%%% Section contrats (Bilateral Contracts and Grants with Industry)
+%%% Il y a des modules ici
+%%%
+%%% Documentation intranet : https://intranet.inria.fr/Vie-scientifique/Information-edition-scientifiques/Comment-rediger-le-RAweb/Les-sections#eztoc27554_11
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{module}{contrats}{cgwi1}{Bilateral Contracts with Industry}
+%%ICI Vous pouvez ecrire du texte
+\end{module}
+
+\begin{module}{contrats}{cgwi2}{Bilateral Grants with Industry}
+%%ICI Vous pouvez ecrire du texte
+\end{module}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%
+%%% Section partenariat (Partnerships and Cooperations)
+%%% Il y a des modules ici
+%%%
+%%% Dans cette section, certains modules sont **normalises**.
+%%% Par consequent, la liste de ces modules
+%%% est :
+%%%  
+%%% \begin{module}{partenariat}{regional}{Regional Initiatives}
+%%% \begin{module}{partenariat}{national}{National Initiatives}
+%%% \begin{module}{partenariat}{europe}{European Initiatives}
+%%% \begin{module}{partenariat}{international}{International Initiatives}
+%%% \begin{module}{partenariat}{visites}{International Research Visitors}
+%%%  
+%%% On peut, en outre, ajouter des modules pour insérer ce qui ne  
+%%% rentre pas dans les catégories ci-dessus. Pour chacun des modules  
+%%% listés, les actions proprement dites apparaitront en  
+%%% \subsubsection, et les listes de {participants} seront ventilées en  
+%%% conséquence, par \subsubsection (et non plus par module)
+%%%  
+%%% Documentation intranet : https://intranet.inria.fr/Vie-scientifique/Information-edition-scientifiques/Comment-rediger-le-RAweb/Les-sections#eztoc27554_12
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{module}{partenariat}{regional}{Regional Initiatives}
+%% ICI Vous pouvez ecrire du texte
+...
+\end{module}
+
+
+\begin{module}{partenariat}{national}{National Initiatives}
+
+        \subsection{Projet Fondation de France: PERINE}
+    \begin{participants}
+      \pers{Élise}{Bannier}, 
+      \pers{Isabelle}{Corouge}, 
+      \pers{Julie}{Coloigner}, 
+      \pers{Maia}{Proisy}, 
+      \pers{Jean-Christophe}{Ferré},
+      \pers{Christian}{Barillot}.
+    \end{participants}
+    This study evaluates the effect of prenatal exposure to neurotoxicants on the
+    developing brain. Following previous studies in the PELAGIE cohort this MRI
+    study involves ASL, Diffusion and working memory as well as motor inhibition
+    BOLD fMRI together with neuropsychological tests in children. Inclusions have
+    started in November 2014 and lasted for 2 years.  The MRI acquisitions of the
+    PERINE projects have all been performed and 101 children included. A PhD started in January 2017 to process the functional MRI data of this
+    project and Julie Coloigner was hired as a post doc to work on the Diffusion and ASL data.
+    
+    \subsection{Projet Fondation de France: EPMR-MA}
+    \begin{participants}
+      \pers{Pierre-Yves}{Jonin},
+      \pers{Élise}{Bannier}, 
+      \pers{Christian}{Barillot}, 
+      \pers{Quentin}{Duché}, 
+    \end{participants}
+    This project evaluates memory effects in healthy adults and in patients
+    presenting cognitive impairments using BOLD fMRI and diffusion MRI. 
+    The inclusions of patients started in 2016 and all inclusions will be over by the end of 2017. Quentin Duché was hired to process the functional MRI and diffusion data end of 2016 and his contract was extended until May 2018. 
+       
+        \subsection{ANR "MAIA", 2015 generic projects program}
+        \label{sssec:anr_maia}
+        \begin{participants}
+          \pers{Maia}{Proisy}
+          \pers{Pierre}{Maurel}
+          \pers{Antoine}{Legouhy}
+          \pers{Olivier}{Commowick}
+          \pers{Isabelle}{Corouge}
+          \pers{Jean-Christophe}{Ferré}
+          \pers{Christian}{Barillot}
+        \end{participants}
+        Each year in France, 55 000 children are born prematurely, i.e., before the
+        37th week of gestation. Long-term studies of the outcome of prematurely born
+        infants have clearly documented that the majority of such infants may have
+        significant motor, cognitive, and behavioral deficits.
+        
+        However, there is a limited understanding of the nature of the cerebral
+        abnormality underlying these adverse neurologic outcomes.  In this context, the
+        emergence of new modalities of 3D functional MRI, e.g., Arterial Spin Labeling
+        (ASL), or optical imaging technologies, e.g., Near InfraRed Spectroscopy
+        (NIRS), brings new perspectives for extracting cognitive information, via
+        metabolic activity measures. Other classical techniques devoted to cerebral
+        signal measurement, such as ElectroEncephaloGraphy (EEG), provide cognitive
+        information at the cortical level. Each of these various non-invasive imaging
+        technologies brings substantial and specific information for the understanding
+        of newborn brain development.
+        
+        This project aims at developing innovative approaches for multi-image /
+        multi-signal analysis, in order to improve neurodevelopment understanding
+        methods. From a fundamental point of view, mathematics and computer science
+        have to be considered in association with imaging physics and medicine, to deal
+        with open issues of signal and image analysis from heterogeneous data (image,
+        signal), considered in the multiphysics contexts related to data acquisition
+        (magnetic, optic, electric signals) and biophysics modeling of the newborn
+        brain. A sustained synergy between all these scientific domains is then
+        necessary.
+        
+        Finally, the sine qua non condition to reach a better understanding of the
+        coupled morphological- cognitive development of premature newborns, is the
+        development of effective software tools, and their distribution to the whole
+        medical community. The very target of this project will be the design of such
+        software tools for medical image / signal analysis, actually operational in
+        clinical routine, and freely available. Academic researchers and industrial
+        partners will work in close collaboration to reach that ambitious goa.
+        
+         \subsection{Fondation pour la recherche médicale (FRM) - Project "Hybrid EEG/IRM Neurofeedback for  rehabilitation of brain pathologies}
+        \begin{participants}
+        	\pers{Élise}{Bannier}, 
+        	\pers{Jean-Marie}{Batail},
+        	\pers{Isabelle}{Bonan}, 
+        	\pers{Isabelle}{Corouge},
+        	\pers{Jean-Christophe}{Ferré}, 
+        	\pers{Jean-Yves}{Gauvrit}, 
+        	\pers{Pierre}{Maurel}, 
+        	\pers{Mathis}{Fleury},
+        	\pers{Giulia}{Lioi}, 
+        	\pers{Christian}{Barillot}
+        \end{participants}	
+        
+        The goal of this project is to make full use of neurofeedback (NF) paradigm in the context of brain
+rehabilitation. The major breakthrough will come from the coupling associating functional and
+metabolic information from Magnetic Resonance Imaging (fMRI) to Electro-encephalography (EEG)
+to “optimize” the neurofeedback protocol. We propose to combine advanced instrumental devices
+(Hybrid EEG and MRI platforms), with new hybrid Brain computer interface (BCI) paradigms and
+new computational models to provide novel therapeutic and neuro-rehabilitation paradigms in
+some of the major mental and neurological disorders of the developmental and the aging brain
+(stroke, language disorders, Mood Depressive Disorder (MDD), …). Though the concept of using
+neurofeedback paradigms for brain therapy has somehow been experimented recently (mostly
+through case studies), performing neurofeedback through simultaneous fMRI and EEG has almost
+never been done before so far (two teams in the world including us within the HEMISFER CominLabs project).
+This project will be conducted through a very complementary set of competences over the different
+involved teams: VISAGES U1228, HYBRID and PANAMA Teams from Inria/Irisa Rennes and EA 4712
+team from U. of Rennes I.
+
+  \subsection{PHRC EMISEP: Evaluation of early spinal cord injury and late
+	physical disability in Relapsing Remitting Multiple Sclerosis}
+\begin{participants}
+	\pers{Élise}{Bannier}, 
+	\pers{Christian}{Barillot},
+	\pers{Emmanuel}{Caruyer},
+	\pers{Benoit}{Combès},
+	\pers{Olivier}{Commowick}, 
+	\pers{Gilles}{Edan}, 
+	\pers{Jean-Christophe}{Ferré},
+	\pers{Anne}{Kerbrat},
+	\pers{Haykel}{Snoussi}.
+\end{participants}
+Multiple Sclerosis (MS) is the most frequent acquired neurological disease
+affecting young adults (1/1000 inhabitants in France)  and leading to
+impairment.  Early and well adapted treatment is essential in patients
+presenting aggressive forms of MS. This PHRC project focusses on physical
+impairment and especially on the ability to walk. Several studies, whether
+epidemiologic or based on brain MRI, have shown that several factors were likely
+to announce aggressive development of the disease, such as age, number of focal
+lesions on baseline MRI, clinical activity. However, these factors only
+partially explain physical impairment progression, preventing their use at the
+individual level. Spinal cord is often affected in MS, as demonstrated in
+postmortem or imaging studies.  Yet, early radiological depiction of spinal
+cord lesions is not always correlated with clinical symptoms. Preliminary data,
+on reduced number of patients, and only investigating the cervical spinal cord
+have shown that diffuse spinal cord injury, observed via diffusion or
+magnetisation transfer imaging, would be correlated with physical impairment as
+evaluated by the EDSS score. Besides, the role of early spinal cord affection
+(first two years) in the evolution of physical impairment remains unknown.
+
+In this project, we propose to address these different issues and perform a
+longitudinal study on Relapsing Remitting Multiple Sclerosis (RRMS) patients,
+recruited in the first year of the disease. Our goal is to show that diffuse
+and focal lesions detected spinal cord MRI in the first 2 years can be used to
+predict disease evolution and physical impairment at 5 years. Twelve centers
+are involved in the study to include 80 patients. 
+
+To date, all subjects have been included. H. Snoussi is working in the
+scope of his PhD thesis on diffusion imaging in the spinal cord starting with distortion correction. The results of this study were presented at the ESMRMB 2017 conference \cite{snoussi:inserm-01579134}. 
+
+B. Combès started as a post doc in November 2016 to process the EMISEP imaging data, starting with
+morphological data processing (registration, segmentation) and magnetization
+transfer data processing. Preliminary results were presented at the ESMRMB and ECTRIMS 2017 conferences \cite{bannier:hal-01578473} \cite{kerbrat:hal-01579486}. 
+
+        \subsection{Competitivity Clusters}
+        
+        \subsubsection{The HEMISFER Project}
+        \begin{participants}
+          \pers{Élise}{Bannier}, 
+          \pers{Jean-Marie}{Batail},
+          \pers{Isabelle}{Bonan}, 
+          \pers{Isabelle}{Corouge},
+          \pers{Claire}{Cury},
+          \pers{Jean-Christophe}{Ferré}, 
+          \pers{Jean-Yves}{Gauvrit}, 
+          \pers{Marsel}{Mano},
+          \pers{Pierre}{Maurel},
+          \pers{Saman}{Norzade},
+          \pers{Lorraine}{Perronnet},
+          \pers{Christian}{Barillot}
+        \end{participants}	
+        
+        The HEMISFER project ("Hybrid Eeg-MrI and Simultaneous neuro-FEedback for brain
+        Rehabilitation") will be conducted at Inria Rennes with the support of the
+        Cluster of Excellence "CominLabs"
+        \footnote{\url{https://iww.inria.fr/cominlabs-newsletter/april-2013-four-projects-selected/\#hemisfer}}.  
+         The goal of HEMISFER is to make full use of the neurofeedback paradigm in
+        the context of rehabilitation and psychiatric disorders. The major breakthrough
+        will come from the use of a coupling model associating functional and metabolic
+        information from Magnetic Resonance Imaging (fMRI) to Electro-encephalography
+        (EEG) to "enhance" the neurofeedback protocol. We propose to combine advanced
+        instrumental devices (Hybrid EEG and MRI platforms), with new man-machine
+        interface paradigms (Brain computer interface and serious gaming) and new
+        computational models (source separation, sparse representations and machine
+        learning) to provide novel therapeutic and neuro-rehabilitation paradigms in
+        some of the major neurological and psychiatric disorders of the developmental
+        and the aging brain (stroke, attention-deficit disorder, language disorders,
+        treatment-resistant mood disorders, ...). This project will be conducted with
+        the HYBRID and PANAMA Teams from Inria Rennes, the EA 4712 team from University
+        of Rennes I and the ATHENA team from Inria Sophia-Antipolis. This work will
+        benefit from the research 3T MRI and MRI-compatible EEG systems provided by the
+        NeurInfo in-vivo neuroimaging platform on which these new research protocols
+        will be set up. A budget of 500keuros~will be provided by the CominLabs cluster
+        in the next 3 years to support this project (through experimental designs,
+        PhDs, Post-docs and Expert Engineers).
+        
+        
+        \subsubsection{France Life Imaging (FLI)}
+        \begin{participants}    	
+          \pers{Christian}{Barillot}, 	
+          \pers{Olivier}{Commowick},
+          \pers{Michael}{Kain},
+          \pers{Florent}{Leray},
+          \pers{Julien}{Louis},
+          \pers{Aneta}{Morawin},
+          \pers{Mathieu}{Simon},
+          \pers{Yao}{Chi}
+        \end{participants}  
+        
+        France Life Imaging (FLI) is a proposed large-scale research infrastructure
+        project aimed at establishing a coordinated and harmonized network of
+        biomedical imaging in France. This project was recently selected by the call
+        ``Investissements d’Avenir - Infrastructure en Biologie et Santé''. One node of
+        this project is the node Information Analysis and Management (IAM), a
+        transversal node build by a consortium of teams that will contribute to the
+        construction of a network for data storage and information processing. Instead
+        of building yet other dedicated facilities, the IAM node will use already
+        existing data storage and information processing facilities (LaTIM Brest;
+        CREATIS Lyon; CIC-IT Nancy; VisAGeS U1228 Inria Rennes; CATI CEA Saclay;
+        LSIIT/ICube Strasbourg) that will increase their capacities for the FLI
+        infrastructure. Inter-connections and access to services will be achieved
+        through a dedicated software platform that will be developed based on the
+        expertise gained through successful existing developments.  The IAM node has
+        several goals. It aims first at building a versatile facility for data
+        management that will inter-connect the data production sites and data
+        processing for which state-of-the-art solutions, hardware and software, will be
+        available to infrastructure users. Modular solutions are preferred to
+        accommodate the large variety of modalities acquisitions, scientific problems,
+        data size, and adapted for future challenges. Second, it aims at offering the
+        latest development that will be made available to image processing research
+        teams.  The team VisAGeS fulfills multiple roles in this nation-wide project.
+        Christian Barillot is the chair of the node IAM, Olivier Commowick is
+        participating in the working group workflow and image processing and Michael
+        Kain the technical manager. Apart from the team members, software solutions
+        like MedInria and Shanoir will be part of the final software platform.
+        
+        
+        %%% \subsection{Collaboration with the CEA (Commissariat à l'Energie Atomique):
+        %%% Standardization of Arterial Spin Labeling acquisitions and imaging data quality
+        %%% assessment in the context of dementia related studies}
+        %%% \begin{participants}
+        %%%   \pers{Élise}{Bannier}, 
+        %%%   \pers{Christian}{Barillot}, 
+        %%%   \pers{Isabelle}{Corouge},
+        %%%   \pers{Jean-Christophe}{Ferré}, 
+        %%%   \pers{Cédric}{Meurée}
+        %%% \end{participants}
+        %%% {\em duration: from August 2014 to December 2015}
+        %%% 
+        %%% Around 900,000 people are affected by various forms of dementia in France. As
+        %%% an early and reliable diagnosis remains difficult to provide, neuroimaging is
+        %%% crucial as a diagnosis assistance by analyzing structural and functional brain
+        %%% abnormalities related to these diseases. The CATI (Centre pour l'Acquisition et
+        %%% le Traitement des Images) is a multicenter neuroimaging network dedicated to
+        %%% the management of dementia related imaging protocols. As VisAGeS and the
+        %%% Neurinfo platform are recognized for their expertise in Arterial Spin Labeling
+        %%% (ASL) acquisition and post-processing, a collaboration contract was signed
+        %%% between Inria and CEA, the coordinator of the CATI initiative, in order to host
+        %%% an engineer in the VisAGeS team for one year. The collaboration resulted in the
+        %%% standardization of the ASL acquisition parameters of the CATI protocols, the
+        %%% setup of these parameters on the scanneres participating in the CATI studies,
+        %%% as well as the development and the integration of post-processing and quality
+        %%% assessment tools into qualiCATI, the quality control software of the CATI.
+        
+        
+        \subsubsection{OFSEP}
+        \begin{participants}    	
+          \pers{Élise}{Bannier},
+          \pers{Christian}{Barillot}, 	
+          \pers{Olivier}{Commowick},    	
+          \pers{Gilles}{Edan},
+          \pers{Jean-Christophe}{Ferré},
+          \pers{Michael}{Kain},     
+          \pers{Inès}{Fakhfakh}     
+        \end{participants}
+         
+        The French Observatory of Multiple Sclerosis (OFSEP) is one of 10 projects
+        selected in January 2011 in response to the call for proposal in the
+        ``Investissements d’Avenir - Cohorts 2010'' program launched by the French
+        Government. It allows support from the National Agency for Research (ANR) of
+        approximately € 10 million for 10 years. It is coordinated by the Department of
+        Neurology at the Neurological Hospital Pierre Wertheimer in Lyon (Professor
+        Christian Confavreux), and it is supported by the EDMUS Foundation against
+        multiple sclerosis, the University Claude Bernard Lyon 1 and the Hospices
+        Civils de Lyon.  OFSEP is based on a network of neurologists and radiologists
+        distributed throughout the French territory and linked to 61 centers. OFSEP
+        national cohort includes more than 50,000 people with Multiple Sclerosis,
+        approximately half of the patients residing in France. The generalization of
+        longitudinal monitoring and systematic association of clinical data and
+        neuroimaging data is one of the objectives of OFSEP in order to improve the
+        quality, efficiency and safety of care and promote clinical, basic and
+        translational research in MS.  For the concern of data management, the Shanoir
+        platform of Inria has been retained to manage the imaging data of the National
+        OFSEP cohort in multiple sclerosis.
+        
+        \end{module} 
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%
+%%% Information sur les données importées : projets européens
+%%%  
+%%% Les données sur vos partenariats européens sont issus de la DPEI via l'entrepôt de données.  
+%%% Les données affichées sont : Nom du projet, Type Defi, Instrument, Duration, Coordinator, Others partners.
+%%%
+%%% Complétez ce qui manque : résumé, Others partners (on attend des noms de pays), ...  
+%%%
+%%%Documentation intranet : https://intranet.inria.fr/Vie-scientifique/Information-edition-scientifiques/Comment-rediger-le-RAweb/Les-sections#eztoc27554_14
+%%%
+%%% En cas de problème : https://helpdesk.inria.fr/categories/181/submit
+%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{module}{partenariat}{europe}{European Initiatives}
+
+\subsection{FP7 \& H2020 Projects}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Donnees  construites d'aprÃ¨s les informations de la base DPE pour 2018
+% Source : https://drone.inria.fr/
+% Date : jeudi 22 novembre 2018, 15:00:58 (UTC+0100)
+%
+
+
+
+
+\subsection{Collaborations in European Programs, Except FP7 \& H2020}
+% Eureka, COST...
+
+% respecter le format  
+%% \begin{itemize}
+%% Gardez la ligne suivante :
+%% \XMLaddatt*{type}{sanspuces}
+%%         \item Program:
+%%         \item Project acronym:
+%%         \item Project title:
+%%         \item Duration: mois ann\'ee d\'ebut - mois ann\'ee fin
+%%         \item Coordinator:
+%%         \item Other partners: organisme, labo (pays)
+%%         \item Abstract:  
+%% \end{itemize}
+
+
+% organisation europeenne  
+% \subsection{Major European Organizations with which the Team have followed Collaborations}
+\subsection{Collaborations with Major European Organizations}
+
+% respecter le format
+%%  \begin{itemize}
+%%  \XMLaddatt*{type}{sanspuces}
+%%         \item Partner 1: organisme 1, labo 1 (pays 1)
+%%         \item Sujet 1 (max. 2 lignes)
+%%  \end{itemize}
+%%  \begin{itemize}
+%%  \XMLaddatt*{type}{sanspuces}
+%%        \item Partner 2: organisme 2, labo 2 (pays 2)
+%%        \item Sujet 2 (max. 2 lignes)
+%%  \end{itemize}
+
+
+\end{module}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%
+%%% Information sur les données importées : équipes associées et autres actions internationales
+%%%  
+%%% La rubrique est partiellement pré-remplie avec les items suivants issus de la base de la DPEI.
+%%% Les équipes associées engagées dans un IIL sont importées sous "Inria International Labs".
+%%%  
+%%% Vous devez compléter cette rubrique.
+%%%  
+%%% Inria International Labs  
+%%% Associate Team not involved in an IIL
+%%% Inria International Partners
+%%%  A. Declared Inria International Partners
+%%%  B. Informal International Partners
+%%% Participation in other International Programs
+%%% Pour vos collaborations internationales, précisez bien le nom anglais du pays en toutes lettres sauf pour les Etats-Unis (utilisez USA).
+    
+%%%Documentation intranet : https://intranet.inria.fr/Vie-scientifique/Information-edition-scientifiques/Comment-rediger-le-RAweb/Les-sections#eztoc27554_15
+%%% Si vous voyez des erreurs, signalez-les via le  https://helpdesk.inria.fr/categories/181/submit
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{module}{partenariat}{internationalInitiatives}{International Initiatives}
+
+%%\subsection{Inria International Labs}
+\subsection{Inria International Labs}
+
+%%% Implication dans les activités des laboratoires conjoints à l'étranger  
+%%% (Inria-Chile, JLESC, LIRIMA, LIAMA , Inria@SiliconValley, EPFL)
+%%% Les équipes associées impliquées dans un IIL apparaissent ici :
+
+
+
+
+%%% Ci-dessous, les projets rattachés à l'IIL hors les équipes associées
+\subsubsection{Other IIL projects}
+
+
+
+
+\subsection{Inria Associate Teams Not Involved in an Inria International Labs}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Donnees construites d'aprÃ¨s les informations de la base DRI pour 2018
+% Source : https://drone.inria.fr/
+% Date : jeudi 22 novembre 2018, 15:00:58 (UTC+0100)
+%
+
+
+
+
+
+
+\subsection{Inria International Partners}
+%%% indique un partenariat international important pour votre équipe,  
+%%% hors Equipes Associées et hors participation aux programmes internationaux mentionnés ci-dessous
+
+        \subsubsection{Declared Inria International Partners}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Donnees construites d'aprÃ¨s les informations de la base DRI pour 2018
+% Source : https://drone.inria.fr/
+% Date : jeudi 22 novembre 2018, 15:00:58 (UTC+0100)
+%
+
+
+
+
+
+
+        \subsubsection{Informal International Partners}
+        
+%%%        Vous pouvez écrire du texte
+
+%%% Si les subsections précédentes sont vides utilisez plutôt le titre sans "Other" : Participation in International Programs
+%%% au lieu de : Participation in Other International Programs
+
+\subsection{Participation in Other International Programs}
+%%%   * Implication dans des activités avec des partenaires français :  JFLI ; IFCAM ; LICIA ; LIRIO ; ICeiRA
+%%%   * Participation aux différents programmes soutenus par la DPEI et/ou des financeurs externes comme :
+%%%   STIC AmSud, Math AmSud, STIC Asie, ECOS-Sud, IFCAM, autres...
+
+
+
+
+
+
+\end{module}
+
+\begin{module}{partenariat}{internationalVisitors}{International Research Visitors}
+% Documentation intranet : https://intranet.inria.fr/Vie-scientifique/Information-edition-scientifiques/Comment-rediger-le-RAweb/Les-sections#eztoc27554_16
+
+\subsection{Visits of International Scientists}
+%chercheurs invités, profs invités (via université). Les internships sont à mettre dans la subsection suivante.
+
+   \subsubsection{Internships}
+
+
+
+
+\subsection{Visits to International Teams}
+% Les explorateurs et sabbatiques provenant des bases de la DPEI sont importés dans votre trame.
+% Vérifiez et complétez.
+   \subsubsection{Sabbatical programme}
+
+
+
+
+   \subsubsection{Explorer programme}
+
+
+
+
+   \subsubsection{Research Stays Abroad}
+%% les séjours de chercheurs d'une durée supérieure à un mois, dans une université ou un laboratoire étranger
+
+
+
+
+%XFYZ_IN_IN
+
+%% ICI Vous pouvez ecrire du texte
+
+\end{module}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%
+%%% Section diffusion des resultats (Dissemination)
+%%% Il y a des modules ici
+%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{module}{diffusion}{animation}{Promoting Scientific Activities}
+
+%%% Le module "Promoting Scientific Activities" comprend les activités éditoriales,
+%%% notamment de reviewing, d'organisation de conférences, de participation à des programmes de conférences.  
+%%% Documentation intranet : https://intranet.inria.fr/Vie-scientifique/Information-edition-scientifiques/Comment-rediger-le-RAweb/Les-sections#eztoc27554_17
+
+%%  respecter le format :  
+
+\subsection{Scientific Events Organisation}
+    \subsubsection{General Chair, Scientific Chair}
+    
+%%%   si liste, alors merci d'utiliser :
+%%%  \begin{itemize}
+%%%     \item  
+%%%     \end{itemize}    
+
+    \subsubsection{Member of the Organizing Committees}
+\subsection {Scientific Events Selection}
+    \subsubsection{Chair of Conference Program Committees}
+    \subsubsection{Member of the Conference Program Committees}
+    \subsubsection{Reviewer}
+\subsection{Journal}
+    \subsubsection{Member of the Editorial Boards}
+    \subsubsection{Reviewer - Reviewing Activities}
+\subsection{Invited Talks}
+\subsection{Leadership within the Scientific Community}
+\subsection{Scientific Expertise}
+\subsection{Research Administration}
+  
+\end{module}
+
+
+\begin{module}{diffusion}{enseignement}{Teaching - Supervision - Juries}
+
+\subsection {Teaching}
+%% Ce modulef présente vos activités d'enseignement et d'encadrement à présenter comme suit :
+
+% respecter le format :  
+ %%\begin{itemize}
+  %%\XMLaddatt*{type}{sanspuces}
+         %%\item Licence : Enseignant, titre du cours, nombre d'heures en équivalent TD, niveau (L1, L2, L3), université, pays  
+         %%\item Master : Enseignant, titre du cours, nombre d'heures en équivalent TD, niveau (M1, M2), université, pays  
+         %%\item Doctorat : Enseignant, titre du cours, nombre d'heures en équivalent TD, université, pays
+         %%\end{itemize}
+
+%%%
+%%% Exemple de section E-learning à décommenter si besoin
+%%%  
+%       \begin{itemize}
+%         \XMLaddatt*{type}{sanspuces}
+%         \item \textbf{E-learning}  
+%         \begin{itemize}
+%         \XMLaddatt*{type}{sanspuces}
+%                \item Mooc, SPOC, etc. : Enseignant ou auteur, titre du cours, durée en nombre de semaine, plate-forme, établissement porteur du cours, public ciblé, formation initiale ou continue, nombre d'inscrits
+%                \item Pedagogical resources : enseignant, titre, type (video, pdf, exercice, ou autre), niveau, url
+%         \end{itemize}    
+% \end{itemize}
+%
+
+%%% Détaillez les activités d'enseignement au moins pour les chercheurs Inria permanents et les enseignants-chercheurs permanents.
+
+\subsection {Supervision}
+%% PhD \& HdR : Les thèses soutenues doivent figurer dans la bibliographie
+
+ %%\begin{itemize}
+  %%\XMLaddatt*{type}{sanspuces}
+           %%\item HdR : nom du chercheur, titre du mémoire, nom de l'Université, date de soutenance
+           %%\item PhD : nom du doctorant, titre du mémoire, nom de l'Université, date de soutenance, encadrant(s)
+           %%\item PhD in progress : Nom du doctorant, titre (provisoire) du mémoire, date du début de la thèse, encadrant(s)
+  %%\end{itemize}
+
+\subsection {Juries}
+
+%% ICI Vous pouvez ecrire du texte dans le module
+
+\end{module}
+
+\begin{module}{diffusion}{popularization}{Popularization}
+
+%%% Le module "Popularization"
+%%% La médiation scientifique concerne toutes les actions à destination de publics sortant du cercle professionnel habituel des scientifiques :
+%%% enfants et jeunes, curieux de la science, grand public, décideurs politiques et partenaires socio-économiques.
+%%% La médiation fait intervenir le chercheur, auteur du contenu scientifique.
+
+%% Organisez vos informations selon les catégories suivantes :
+
+\subsection{Internal or external Inria responsibilities}
+%%% Il s'agit de responsabilités collectives : chargé.e de mission, de médiation, membre de commissions (locales/nationales),  
+%%% de comité éditorial de revues (interstices, images de maths, etc.), de comité scientifique de fondations,
+%%% d'édition d'ouvrages de vulgarisation collectifs, ...
+
+\subsection{Articles and contents}
+ %%\begin{itemize}
+       %%\item In books/journals for the general public
+       %%\item For online publications (Interstices*, Images des Maths, Binaire, Wikipedia), and more widely blog articles
+       %%\item Interviews in order to popularize
+       %%\item White Papers - white Papers for Popularization
+  %%\end{itemize}
+%%% *Interstices articles are automatically entered into Hal
+
+\subsection{Education}
+%%% *Interactions avec l'Education Nationale ou les structures d'éducation populaire
+%%% (exemple : contribuer à former des formateurs,  participer à la transmission d'outils pédagogiques sur la pensée informatique,
+%%% de personnels de l'Education Nationale ou de structures d'éducation populaire, par exemple en temps présentiel de Class'Code,
+%%% ou encore des actions pour l'enseignement comme la participation à l'élaboration des programmes scolaires, interactions avec le CNNum, etc.)
+%%% *Mise en place de modules doctoraux sur la médiation
+%%% *Participations à/créations de Moocs dont on indiquera ici les enjeux de médiation (en complément de la section e-learning dans laquelle ce même Mooc devrait apparaître aussi)
+%%% *Créations de cours (par exemple ISN)
+%%% *Organisation de/participation à des salons à destination des professionnels de l'éducation (ORME, educatec-educatice....)
+
+\subsection{Interventions}
+ %%\begin{itemize}
+    %%\item National events: Fête de la Science, Codeweek, Semaine des maths, one-off events such as Pint of Science
+    %%\item Public exhibitions (Futurs en Seine,...)
+    %%\item In educational institutions
+    %%\item Welcoming of schoolchildren or the general public in an Inria center: MathC2+ internship, open days,...
+  %%\end{itemize}
+      
+
+\subsection{Internal action}
+ %%\begin{itemize}
+     %%\item Internal meetings such as Café des sciences
+     %%\item Training of colleagues on new contents or media (activités débranchées, Poppy Ergo, TensorFlow,...)
+     %%\item Training follow-up (Media Training, new media such as Poppy ergo, with SIF, etc.)
+     %%\item Science outreach towards services (DPEI, STIP...)
+  %%\end{itemize}
+
+\subsection{Creation of media or tools for science outreach}
+%%% Nouveaux supports pour comprendre les fondamentaux des sciences du numérique ou
+%%% pour expliquer des résultats de recherche des plus ancrés aux plus récents :
+%%% vidéos, slides, création de jeu (qui explique un sujet, par exemple : Model checking), fiches autonomes d'activités, …
+
+\end{module}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%
+%%% Section bibliographie
+%%%
+%%% Il y a trois fichiers de bibliographie
+%%%
+%%% - visages_refer2018.bib est inclus dans sa totalité mais en commentaire, sélectionnez les 10
+%%%   références majeures du projet en les décommentant (Remplacer AROBAS par @). Pour les citer : \refercite
+%%%
+%%% - visages2018.bib les publis de l'année 2018 issues de Hal, citées par \cite
+%%%
+%%% - visages_foot2018.bib contient les citations utilisées en note  de bas de page, citées par \footcite  
+%%%
+%%% Vérifier si les noms des auteurs sont corrects  
+%%%
+%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%
+%%% Information sur les données exportées : biblio
+%%%  
+%%% Seules les publications présentes dans Hal seront prises en compte dans le RA 2018 comme publications de l'année.
+%%% Lors de la compilation sur iRabot le fichier visages2018.bib sera automatiquement récupéré à partir de Hal.  
+%%% Le fichier visages2018.bib ne doit pas être édité.
+%%%
+%%% Vous devez donc déposer dans Hal https://hal.inria.fr/ vos publications manquantes.  
+%%% Attention, pour  cause de validation, il peut y avoir un délai de 24h avant la mise en ligne et l'intégration à la trame.  
+%%% Les thèses soutenues doivent figurer dans la biblio et donc être sur Hal.
+%%%
+%%% Consulter la bibliographie de l'année : https://irabot.inria.fr/itramera?&format=bib&epi=visages&annee=2018
+%%%
+%%%Rappel : les Best papers cités en section Highlights sont affichés dans la biblio sur fond de couleur avec la mention "Best paper".
+%%%Citez les publications récompensées sous la forme : \bestcite{xxxx}, \bestcite{yyyy}.
+
+%%% Les publications de référence et celles en notes de bas de pages sont issues de votre RAweb 2017
+%%% Url de consulation du RAweb 2017 : http://raweb.inria.fr/rapportsactivite/RA2017/index.html
+%%%
+%%% Depuis le 25/09/2018, vous pouvez déposer du code source dans HAL et ainsi contribuer au patrimoine logiciel constitué par Software Heritage.
+%%% La notice logiciel de Hal est affichée en catégorie misc.
+
+%%% Vérifiez et signalez erreurs et problèmes  via le  https://helpdesk.inria.fr/categories/181/submit
+%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%% Attention, il n'y a pas de \nocite{*} implicite.  
+%%% Une commande \nocite{*} a été ajoutée.
+%%% Vous pouvez utiliser des \nocite{xx}.
+%   \nocite{TFE98}
+%   \nocite{AGATHISC}
+%   \nocite{FD98}
+%   \nocite{x,y,z}  
+
+%%% Une commande \omitcite a été créée pour permettre d'exclure certaines références de publication Hal de la biblio du RA.
+%%% Syntaxe : un omitcite par ligne
+%%%    \omitcite{bret:hal-00000}
+%%%    \omitcite{bret:hal-00000}
+%%%    \nocite{*}
+
+\nocite{*}
+\loadbiblio
+
+%%%%% fin du document
+\end{document}
+
+
+%% VISAGES
+%% Date : jeudi 22 novembre 2018, 15:00:58 (UTC+0100)
+%% Source rapport latex VISAGES : http://ralyx.inria.fr/Raweb/visages/uid0.html
+%% Source donnees bastri SR0103YR : https://bastri.inria.fr/Bastri/structureinria/siid/SR0103YR/look
+%% Source donnees bil VISAGES : https://bil.inria.fr/

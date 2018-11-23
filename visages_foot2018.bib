@@ -1,0 +1,588 @@
+%% This BibTeX bibliography file was created using BibDesk.
+%% http://bibdesk.sourceforge.net/
+
+
+%% Created for Christian Barillot at 2009-12-18 17:39:24 +0100 
+
+
+%% Saved with string encoding Unicode (UTF-8) 
+
+%% inria-00331762, version 1
+%% http://hal.inria.fr/inria-00331762
+
+@techreport{combes:hal-00656388,
+    hal_id = {hal-00656388},
+    url = {http://hal.inria.fr/hal-00656388},
+    title = {{A new efficient EM-ICP algorithm for non-linear registration of 3D point sets}},
+    author = {Comb{\`e}s, Beno{\^\i}t and Prima, Sylvain},
+    abstract = {{In this paper, we present a new method for non-linear pairwise registration of point sets. In this method, we consider the points of the first set as the draws of a Gaussian mixture model whose centres are the points of the second set displaced by a deformation. Next we perform {\it maximum a posteriori} estimation of the parameters (which include the unknown transformation) of this model using the expectation-maximisation algorithm. Compared to other methods using the same ''EM-ICP'' paradigm/framework, we propose three key modifications leading to an efficient algorithm allowing for fast registration of large point sets: 1) symmetrisation of the point-to-point correspondences; 2) specification of priors on these correspondences using differential geometry; 3) efficient encoding of deformations using the RKHS theory and the Fourier analysis. The resulting algorithm is efficient and is able to register large data sets. We evaluate the added value of the modifications and compare our method to the state-of-the-art CPD algorithm on synthetic data.}},
+    language = {Anglais},
+    affiliation = {VISAGES : Vision Action et Gestion d'Informations en Sant{\'e} - VISAGES},
+    type = {Rapport de recherche},
+    institution = {INRIA},
+    number = {RR-7853},
+    year = {2012},
+    month = Jan,
+    pdf = {http://hal.inria.fr/hal-00656388/PDF/RR-7853.pdf},
+}
+
+@inproceedings{combes:inria-00331762,
+    hal_id = {inria-00331762},
+    url = {http://hal.inria.fr/inria-00331762},
+    title = {{New algorithms to map asymmetries of 3D surfaces}},
+    author = {Comb{\`e}s, Beno{\^\i}t and Prima, Sylvain},
+    abstract = {{In this paper, we propose a set of new generic automated processing tools to characterise the local asymmetries of anatomical structures (represented by surfaces) at an individual level, and within/between populations. The building bricks of this toolbox are: 1) a new algorithm for robust, accurate, and fast estimation of the symmetry plane of grossly symmetrical surfaces, and 2) a new algorithm for the fast, dense, non-linear matching of surfaces. This last algorithm is used both to compute dense individual asymmetry maps on surfaces, and to register these maps to a common template for population studies. We show these two algorithms to be mathematically well-grounded, and provide some validation experiments. Then we propose a pipeline for the statistical evaluation of local asymmetries within and between populations. Finally we present some results on real data.}},
+    language = {Anglais},
+    affiliation = {VISAGES : Vision Action et Gestion d'Informations en Sant{\'e} - VISAGES},
+    booktitle = {{11th International Conference on Medical Image Computing and Computer-Assisted Intervention (MICCAI'2008)}},
+    pages = {17-25},
+    address = {New-York, {\'E}tats-Unis},
+    volume = {11 (Pt 1)},
+    audience = {internationale },
+    doi = {10.1007/978-3-540-85988-8\_3 },
+    year = {2008},
+    pdf = {http://hal.inria.fr/inria-00331762/PDF/miccaiCombes2008Final.pdf},
+}
+
+
+@inproceedings{abadie:2011:inria-00626270:1,
+  AUTHOR = {Abadie, Alexandre and Comb{\`e}s, Beno{\^\i}t and Haegelen, Claire and Prima, Sylvain},
+  TITLE = {{CLARCS, a C++ Library for Automated Registration and Comparison of Surfaces: Medical Applications}},
+  BOOKTITLE = {{MICCAI Workshop on Mesh Processing in Medical Image Analysis (MeshMed'2011)}},
+  YEAR = {2011},
+  MONTH = Sep,
+  PAGES = {117-126},
+  ADDRESS = {Toronto, Canada},
+  X-INTERNATIONAL-AUDIENCE = {yes},
+  X-PROCEEDINGS = {yes},
+  URL = {http://hal.inria.fr/inria-00626270/en},
+  X-ID-HAL = {inria-00626270},
+}
+
+@inproceedings{combes:2011:inserm-00633573:1,
+  AUTHOR = {Comb{\`e}s, Beno{\^\i}t and Garraud, Charles and Morandi, Xavier and Prima, Sylvain and Hellier, Pierre},
+  TITLE = {{MRI-free neuronavigation for transcranial magnetic stimulation in severe depression}},
+  BOOKTITLE = {{MICCAI Workshop on Mesh Processing in Medical Image Analysis (MeshMed'2011)}},
+  YEAR = {2011},
+  MONTH = Sep,
+  PAGES = {29-38},
+  ADDRESS = {Canada},
+  X-INTERNATIONAL-AUDIENCE = {yes},
+  X-PROCEEDINGS = {yes},
+  URL = {http://hal.inria.fr/inserm-00633573/en},
+  X-ID-HAL = {inserm-00633573},
+}
+
+@incollection{Baillard2000d,
+	Address = {Pittsburgh, PA},
+	Author = {Baillard, C. and Barillot, Christian},
+	Booktitle = {Medical Image Computing and Computer-Assisted Intervention},
+	Pages = {236-245},
+	Publisher = {Springer-Verlag},
+	Series = {Lecture Notes in Computer Sciences},
+	Title = {Robust 3D Segmentation of Anatomical Structures with Level Sets},
+	Volume = {lncs-1935},
+	Year = {2000}}
+
+@article{Baillard01,
+	Author = {Baillard, C. and Hellier, Pierre and Barillot, Christian},
+	Journal = {Medical Image Analysis},
+	Number = {3},
+	Pages = {185-194},
+	Title = {Segmentation of brain 3D MR images using level sets and dense registration},
+	Volume = {5},
+	Year = {2001}}
+
+@phdthesis{Bari99hdr,
+	Author = {Barillot, Christian},
+	title = {Fusion de donn{\'e}es et imagerie 3D en m{\'e}decine},
+	school = {Universit{\'e} de Rennes 1},
+	url = {ftp://ftp.irisa.fr/techreports/habilitations/barillot.pdf},
+	Year = {1999}}
+
+@article{Barillot06,
+	Abstract = {The NeuroBase project aims at studying the requirements for federating,
+	through the Internet, information sources in neuroimaging. These
+	sources are distributed in different experimental sites, hospitals
+	or research centers in cognitive neurosciences, and contain heterogeneous
+	data and image processing programs. More precisely, this project
+	consists in creating of a shared ontology, suitable for supporting
+	various neuroimaging applications, and a computer architecture for
+	accessing and sharing relevant distributed information. We briefly
+	describe the semantic model and report in more details the architecture
+	we chose, based on a media-tor/wrapper approach. To give a flavor
+	of the future deployment of our architecture, we de-scribe a demonstrator
+	that implements the comparison of distributed image processing tools
+	applied to distributed neuroimaging data.},
+	Author = {Barillot, Christian and Benali, H. and Dojat, Michel and Gaignard, A. and Gibaud, Bernard and Kinkingnehun, S. and Matsumoto, J. P. and Pelegrini-Issac, M. and Simon, E. and Temal, L.},
+	Journal = {Stud Health Technol Inform},
+	Note = {Studies in Health Technology and Informatics},
+	Pages = {3-13},
+	Title = {Federating Distributed and Heterogeneous Information Sources in Neuroimaging: The NeuroBase Project},
+	Volume = {120},
+	Year = {2006}}
+
+@article{Buades05,
+	Author = {Buades, A. and Coll, B. and Morel, J. M.},
+	Journal = {Multiscale Modeling \& Simulation},
+	Number = {2},
+	Pages = {490-530},
+	Title = {A review of image denoising algorithms, with a new one.},
+	Volume = {4},
+	Year = {2005}}
+
+@inproceedings{Corouge01c,
+	Address = {Thessaloniki, Greece},
+	Author = {Corouge, Isabelle and Barillot, Christian},
+	Booktitle = {IEEE Int. Conf. on Image Processing, ICIP'2001},
+	Pages = {149-152},
+	Publisher = {IEEE Press},
+	Title = {Use of a probabilistic shape model for non-linear registration of 3D scattered data},
+	Year = {2001}}
+
+@article{Corouge04a,
+	Author = {Corouge, Isabelle and Dojat, Michel and Barillot, Christian},
+	Doi = {http://dx.doi.org/10.1016/j.media.2004.06.023},
+	Journal = {Medical Image Analysis},
+	Number = {3},
+	Pages = {353-360},
+	Title = {Statistical shape modeling of low level visual area borders},
+	Url = {http://authors.elsevier.com/sd/article/S1361841504000350},
+	Volume = {8},
+	Year = {2004},
+	Bdsk-Url-1 = {http://authors.elsevier.com/sd/article/S1361841504000350},
+	Bdsk-Url-2 = {http://dx.doi.org/10.1016/j.media.2004.06.023}}
+
+@article{Corouge03a,
+	Abstract = {Within the scope of three-dimensional brain imaging, we propose an
+	inter-individual fusion scheme to register functional activations
+	according to anatomical cortical structures, the sulci. This paper
+	is based on the assumption that an important part of the functional
+	inter-subject variability is encoded in the anatomical variability.
+	Therefore, we aim in this paper at proposing a generic framework
+	to register functional activations according to relevant anatomical
+	landmarks. Compared to "classical" inter-individual fusion schemes,
+	this approach is local. It relies on a statistical sulci shape model
+	accounting for the inter-individual variability of a population
+	of subjects, and providing deformation modes relatively to a reference
+	shape (a mean sulcus). The deformation field obtained between a
+	given sulcus and the reference sulcus is extended to a neighborhood
+	of the given sulcus by using the thin-plate spline interpolation.
+	It is then applied to functional activations located in the vicinity
+	of this sulcus. This approach is compared with rigid and non rigid
+	registration methods. We present in this paper results on MEG somatosensory
+	data acquired on 18 subjects. We show that the non-linear local
+	fusion scheme signicantly reduces the functional variability after
+	registration.},
+	Author = {Corouge, Isabelle and Hellier, Pierre and Gibaud, Bernard and Barillot, Christian},
+	Journal = {Neuroimage},
+	Keywords = {3D cerebral imaging, probabilistic neuroimaging atlas, statistical shape model, thin-plate spline, non-linear registration, cortical sulci, functional activations, MEG dipoles},
+	Number = {4},
+	Pages = {1337--1348},
+	Title = {Inter-individual functional mapping: a non linear local approach},
+	Url = {http://dx.doi.org/10.1016/S1053-8119(03)00158-7},
+	Volume = {19},
+	Year = {2003},
+	Bdsk-Url-1 = {http://dx.doi.org/10.1016/S1053-8119(03)00158-7}}
+
+@article{Coupe07,
+	Abstract = {3D freehand ultrasound is a technique based on the acquisition of
+	non parallel Bscans whose position in 3D space is known by a 3D
+	localizer (optic or magnetic) attached to the probe. From these
+	irregularly distributed B-scans and their positions, a regular 3D
+	lattice volume can be reconstructed. This reconstruction step may
+	be needed to apply conventional 3D computer vision algorithms like
+	volumetric registration and segmentation, but is still an acute
+	problem with regards to computation time and reconstruction quality.
+	In this paper, a new 3D reconstruction method is presented, taking
+	explicitly into account the 3D probe trajectory. Experiments were
+	conducted on di
+erent data sets (phantom and intra-operative sequences)
+	with various probe motion types and average distance between two
+	consecutive B-scans. Results indicate that this technique outperforms
+	other classical methods at the expense of a slight computational
+	increase.},
+	Journal = {Medical Image Analysis},
+	Note = {to appear},
+	Title = {Probe Trajectory Interpolation for 3D Reconstruction of Freehand Ultrasound},
+	Year = {2007}}
+
+@article{DeGuiber07,
+	Author = {De Guibert C., Allaire C., Le Rumeur E.},
+	Journal = {Cortex},
+	Owner = {cbarillo},
+
+	Timestamp = {2007.11.28},
+	Title = {Morphologic and functional neuroimaging findings in specified and unspecified dysphasias (specific language impairments): review and perspectives},
+	Year = {2007}}
+
+@incollection{WiestDaessle08b,
+	Address = {New York, USA},
+	Booktitle = {Medical Image Computing and Computer Assisted Intervention, MICCAI'08},
+	Owner = {cbarillo},
+	Publisher = {Metaxas, D.N. Axel, L.},
+	Timestamp = {2008.12.19},
+	Title = {Impact of Rician adapted non-local means filtering on HARDI},
+	Year = {2008}}
+
+@inproceedings{Grova04,
+	Author = {Christophe Grova and Pierre Jannin and Ir{\`e}ne Buvat and Habib Benali and Bernard Gibaud},
+	Booktitle = {Medical Image Computing and Computer-Assisted Intervention -- MICCAI 2004, 7th International Conference Saint-Malo, France, September 26-29, 2004, Proceedings, Part I},
+	Editor = {Christian Barillot and David R. Haynor and Pierre Hellier},
+	Isbn = {3-540-22976-0},
+	Pages = {687-695},
+	Publisher = {Springer},
+	Series = {Lecture Notes in Computer Science},
+	Title = {Evaluation of Registration of Ictal SPECT/MRI Data Using Statistical Similarity Methods},
+	Volume = {3216},
+	Year = {2004}}
+
+@incollection{Hellier02b,
+	Address = {Tokyo},
+	Author = {Hellier, Pierre and Ashburner, J. and Corouge, Isabelle and Barillot, Christian and Friston, K.J.},
+	Booktitle = {Medical Image Computing and Computer-Assisted Intervention - MICCAI 2002},
+	Editor = {Kikinis, R. and Ellis, R. and Dohi, T.},
+	Pages = {590-587},
+	Publisher = {Springer-Verlag},
+	Series = {Lecture Notes in Computer Sciences},
+	Title = {Inter subject registration of functional and anatomical data using SPM},
+	Volume = {LNCS-2489},
+	Year = {2002}}
+
+@article{Hellier03b,
+	Abstract = {In this paper, we investigate the introduction of cortical constraints
+	for non rigid inter-subject brain registration. We extract sulcal
+	patterns with the active ribbon method. An energy based registration
+	method, which will be called photometric registration method in
+	this paper, makes it possible to incorporate the matching of cortical
+	sulci, and express in a unied framework the local sparse similarity
+	and the photometric similarity. We show the objective benets of
+	cortical constraints on a database of 18 subjects, with global and
+	local assessment of the registration. This new registration scheme
+	has also been evaluated on functional MEG data. We show that the
+	anatomically constrained registration leads to a substantial reduction
+	of the inter-subject functional variability.},
+	Author = {Hellier, Pierre and Barillot, Christian},
+	Journal = {IEEE Transactions on Medical Imaging},
+	Keywords = {Image Registration, Evaluation, Intersubject Registration, Brain, Deformable, Non Rigid Registration, deformation field, Landmark-Based Registration},
+	Note = {Journal Article},
+	Number = {2},
+	Pages = {217-227},
+	Title = {Coupling dense and landmark-based approaches for non rigid registration},
+	Volume = {22},
+	Year = {2003}}
+
+@article{Hellier03z,
+	Author = {Hellier, Pierre and Barillot, Christian and Corouge, Isabelle and Gibaud, Bernard and Le Goualher, G. and Collins, Louis and Evans, A. and Malandain, Gr{\'e}goire and Ayache, Nicholas and Christensen, E., Gary and Johnson, H.},
+	Journal = {IEEE Transactions on Medical Imaging},
+	Number = {9},
+	Pages = {1120-1130},
+	Title = {Retrospective Evaluation of Intersubject Brain Registration},
+	Volume = {22},
+	Year = {2003}}
+
+@article{Hellier01,
+	Author = {Hellier, Pierre},
+	Abstract = {In this paper we describe a new method for medical image registration.
+	The registration is formulated as a minimization problem involving
+	robust estimators. We propose an efficient hierarchical optimization
+	ramework which is both multiresolution and multigrid. An anatomical
+	segmentation of the cortex is introduced in the adaptive partitioning
+	of the volume on which the multigrid minimization is based. This
+	allows to limit the estimation to the areas of interest, to accelerate
+	the algorithm, and to refine the estimation in specified areas.
+	At each stage of the hierarchical estimation, we refine current
+	estimate by seeking a piecewise affine model for the incremental
+	deformation field. The performances of this method are numerically
+	evaluated on simulated data and its benefits and robustness are
+	shown on a database of 18 real acquisitions.},
+	Journal = {IEEE Transaction on Medical Imaging},
+	Keywords = {Registration, atlas matching, medical imaging, incremental optical flow, multigrid minimization, robust estimators},
+	Number = {5},
+	Pages = {388-402},
+	Title = {Hierarchical estimation of a dense deformation field for 3D robust registration},
+	Volume = {20},
+	Year = {2001}}
+
+@article{Jannin06b,
+	Author = {Jannin, Pierre and Grova, Christophe and Maurer, C.R.},
+	Journal = {International Journal of Computer Assisted Radiology and Surgery},
+	Number = {2},
+	Pages = {1001-1015},
+	Title = {Model for defining and reporting reference-based validation protocols in medical image processing},
+	Volume = {1},
+	Year = {2006}}
+
+@incollection{Jannin08book,
+	Author = {Jannin, Pierre and Korb, W.},
+	Booktitle = {Image-Guided Interventions: Technology and Applications},
+	Chapter = {16},
+	Editor = {Peters, Terry and Cleary, Kevin},
+	Pages = {531-547},
+	Publisher = {Springer},
+	Title = {Assessment of Image Guided Interventions},
+	Year = {2008}}
+
+@article{Jannin06a,
+	Author = {Jannin, Pierre and Krupinski, E. and Warfield, K., Simon},
+	Journal = {IEEE Trans Med Imaging},
+	Keywords = {*Algorithms Databases, Factual Diagnostic Imaging/*standards *Guidelines Image Interpretation, Computer-Assisted/*standards Information Storage and Retrieval/standards Quality Assurance, Health Care/*standards Reference Values *Software *Software Validation},
+	Note = {Jannin, Pierre Krupinski, Elizabeth Warfield, Simon Editorial United States IEEE transactions on medical imaging IEEE Trans Med Imaging. 2006 Nov;25(11):1405-9.},
+	Number = {11},
+	Pages = {1405-9},
+	Title = {Validation in medical image processing},
+	Volume = {25},
+	Year = {2006}}
+
+@article{Jannin07,
+	Abstract = {In this paper, we outline a way to improve computer-assisted neurosurgery
+	using surgical models along with patient-specific models built from
+	multimodal images. We propose a methodological framework for surgical
+	models that include the definition of a surgical ontology, the development
+	of software for describing surgical procedures based on this ontology
+	and the analysis of these descriptions to generate knowledge about
+	surgical practice. Knowledge generation is illustrated by two studies.
+	One hundred fifty-nine patients who underwent brain tumor surgery
+	were described from postoperative reports using the surgical ontology.
+	First, from a subset of 106 surgical cases, we computed a decision
+	tree using a prediction approach that gave probability in terms
+	of operating room patient positioning percentages and according
+	to tumor location within one or more lobes. Second, from the whole
+	set of 159 surgical cases, we identified 6 clusters describing families
+	of cases according to pathology-related parameters. Results from
+	both studies showed possible prediction of parts of the surgical
+	procedure from pathology-related characteristics of the patient.
+	Surgical models enable surgical knowledge to be made explicit, facilitating
+	the surgical decision-making process and surgical planning and improving
+	the human-computer interface during surgery.},
+	Author = {Jannin, Pierre and Morandi, Xavier},
+	Journal = {Neuroimage},
+	Note = {Jannin, P Morandi, X United States NeuroImage Neuroimage. 2007 Sep 1;37(3):783-91. Epub 2007 May 31},
+	Number = {3},
+	Pages = {783-91},
+	Title = {Surgical models for computer-assisted neurosurgery},
+	Volume = {37},
+	Year = {2007}}
+
+@article{Jannin03,
+	Abstract = {OBJECTIVE: Improvement of the planning stage of image-guided surgery
+	requires a better anticipation of the surgical procedure and its
+	anatomical and functional environment. This anticipation should
+	be provided by acquisition of multimodal medical images of the patient
+	and by a better understanding of surgical procedures. In this paper,
+	we propose improvements to the planning and performance of multimodal
+	image-guided neurosurgery through the use of information models
+	related to neurosurgical procedures. MATERIALS AND METHODS: A new
+	generic model of surgical procedures is introduced in the context
+	of multimodal image-guided craniotomies. The basic principle of
+	the model is to break down the surgical procedure into a sequence
+	of steps defining the surgical script. In the model, a step is defined
+	by an action. The model assigns to each surgical step a list of
+	image entities extracted from multimodal preoperative images (i.e.,
+	anatomical and/or functional images) which are relevant to the performance
+	of that particular step. A semantic validation of the model was
+	performed by instantiating the model entities for 29 surgical procedures.
+	RESULTS: The resulting generic model is described by a UML class
+	diagram and a textual description. The validation showed the relevance
+	of the model, confirming the main underlying assumptions. It also
+	provided some leads to improve the model. CONCLUSION: While further
+	validation is needed, the initial benefits of this approach can
+	already be outlined. It should add real value to the different levels
+	of image-guided surgery, from preprocessing to planning, as well
+	as during surgery. Models of surgical procedures can manage image
+	data according to the surgical script, which should lead to better
+	anticipation of surgery through the development of simulation tools.
+	Furthermore, the models may improve the performance of surgery using
+	microscope-based neuronavigation systems by making it possible to
+	adapt both visualization and interaction features of multimodal
+	preoperative images according to the model.},
+	Author = {Jannin, Pierre and Raimbault, M. and Morandi, Xavier and Riffaud, Laurent and Gibaud, Bernard},
+	Journal = {Comput Aided Surg},
+	Keywords = {Humans *Models, Theoretical Neurosurgical Procedures/*methods Surgery, Computer-Assisted/methods/*standards},
+	Note = {Jannin, P Raimbault, M Morandi, X Riffaud, L Gibaud, B Research Support, Non-U.S. Gov't Validation Studies United States Computer aided surgery : official journal of the International Society for Computer Aided Surgery Comput Aided Surg. 2003;8(2):98-106.},
+	Number = {2},
+	Pages = {98-106},
+	Title = {Model of surgical procedures for multimodal image-guided neurosurgery},
+	Volume = {8},
+	Year = {2003}}
+
+@article{JanninCAS03,
+	Author = {Jannin, Pierre and Raimbault, M. and Morandi, Xavier and Riffaud, L. and Gibaud, Bernard},
+	Journal = {Computer Assisted Surgery},
+	Number = {2},
+	Pages = {98-106},
+	Title = {Models of surgical procedures for multimodal image-guided neurosurgery},
+	Volume = {8},
+	Year = {2003}}
+
+@article{Paul05,
+	Abstract = {Displaying anatomical and physiological information derived from preoperative
+	medical images in the operating room is critical in image-guided
+	neurosurgery. This paper presents a new approach referred to as
+	augmented virtuality (AV) for displaying intraoperative views of
+	the operative field over three-dimensional (3-D) multimodal preoperative
+	images onto an external screen during surgery. A calibrated stereovision
+	system was set up between the surgical microscope and the binocular
+	tubes. Three-dimensional surface meshes of the operative field were
+	then generated using stereopsis. These reconstructed 3-D surface
+	meshes were directly displayed without any additional geometrical
+	transform over preoperative images of the patient in the physical
+	space. Performance evaluation was achieved using a physical skull
+	phantom. Accuracy of the reconstruction method itself was shown
+	to be within 1 mm (median: 0.76 mm<tex>$pm$</tex>0.27), whereas
+	accuracy of the overall approach was shown to be within 3 mm (median:
+	2.29 mm<tex>$pm$</tex>0.59), including the image-to-physical space
+	registration error. We report the results of six surgical cases
+	where AV was used in conjunction with augmented reality. AV not
+	only enabled vision beyond the cortical surface but also gave an
+	overview of the surgical area. This approach facilitated understanding
+	of the spatial relationship between the operative field and the
+	preoperative multimodal 3-D images of the patient.},
+	Author = {Paul, P. and Fleig, O.J. and Jannin, Pierre},
+	Doi = {10.1109/TMI.2005.857029},
+	Journal = {IEEE Transactions on Medical Imaging},
+	Keywords = {Image-guided neurosurgery, neuronavigation, performance evaluation, preoperative and intraoperative multimodal, images, stereopsis, Image-guided neurosurgery, neuronavigation, performance evaluation, preoperative and intraoperative, multimodal images, stereopsis},
+	Linktopdf = {http://ieeexplore.ieee.org/iel5/42/32620/01525185.pdf?isnumber=32620&arnumber=1525185},
+	Note = {0278-0062},
+	Number = {11},
+	Pages = {1500},
+	Title = {Augmented Virtuality Based on Stereoscopic Reconstruction in Multimodal Image-Guided Neurosurgery: Methods and Performance Evaluation},
+	Url = {http://ieeexplore.ieee.org/xpls/abs_all.jsp?isnumber=32620&arnumber=1525185&count=11&index=9},
+	Volume = {24},
+	Year = {2005},
+	Bdsk-Url-1 = {http://ieeexplore.ieee.org/xpls/abs_all.jsp?isnumber=32620&arnumber=1525185&count=11&index=9},
+	Bdsk-Url-2 = {http://dx.doi.org/10.1109/TMI.2005.857029}}
+
+@inproceedings{Paul06,
+	Address = {Copenhagen, DK},
+	Author = {Paul, Perrine and Quere, A. and Arnaud, E. and Morandi, Xavier and Jannin, Pierre},
+	Booktitle = {Workshop on Augmented Environments for Medical Imaging and Computer-Aided Surgery (AMI-ARC'06)},
+	Title = {A surface registration approach for video-based analysis of intraoperative brain surface deformations},
+	Year = {2006}}
+
+@article{Perona90,
+	Abstract = {A new definition of scale-space is suggested, and a class of algorithms
+	used to realize a diffusion process is introduced. The diffusion
+	coefficient is chosen to vary spatially in such a way as to encourage
+	intraregion smoothing rather than interregion smoothing. It is shown
+	that the 'no new maxima should be generated at coarse scales' property
+	of conventional scale space is preserved. As the region boundaries
+	in the approach remain sharp, a high-quality edge detector which
+	successfully exploits global information is obtained. Experimental
+	results are shown on a number of images. Parallel hardware implementations
+	are made feasible because the algorithm involves elementary, local
+	operations replicated over the image.},
+	Author = {Perona, P. and Malik, J.},
+	Journal = {IEEE Transactions on Pattern Analysis and Machine Intelligence},
+	Number = {7},
+	Pages = {629-639},
+	Title = {Scale-space and edge detection using anisotropic diffusion},
+	Volume = {12}}
+
+@article{rudin92,
+	Author = {Rudin, L. and Osher, S. and Fatemi, E.},
+	Journal = {Physica},
+	Year = {1992}}
+
+@article{West97,
+	Author = {West, J. and Fitzpatrick, J.M. and Wang, M.Y. and Dawant, Benoit M. and Maurer, C.R. and Kessler, R.M. and Maciunas, R.J. and Barillot, Christian and Lemoine, D. and Collignon, A. and Maes, F. and Suetens, P. and Vandermeulen, D. and van den Elsen, P.A. and Napel, S. and Sumanaweera, T.S. and Harkness, B. and Hemler, P.F. and Hill, D.L.G. and Hawkes, D.J. and Studholme, C. and Maintz, J.B.A. and Viergever, A., Max and Malandain, Gr{\'e}goire and Pennec, Xavier and Noz, M.E. and Maguire, G.Q. and Pollack, M. and Pellizzari, C.A. and Robb, R.A. and Hanson, D. and Woods, R.},
+	Journal = {J. Computer Assisted Tomography},
+	Pages = {554-566},
+	Title = {Comparison and Evaluation of Retrospective Intermodality Brain Image Registration Techniques},
+	Volume = {21},
+	Year = {1997}}
+
+@incollection{Wiest-miccai07,
+	Booktitle = {Medical Image Computing and Computer Assisted Intervention (Miccai'2007)},
+	Editor = {Ayache, Nicholas and Ourselin, S. and Maeder, A.},
+	Pages = {344--351},
+	Publisher = {Springer-Verlag},
+	Series = {Lecture Notes in Computer Science (LNCS)},
+	Title = {Non-local means variants for denoising of diffusion-weighted and diffusion tensor MRI},
+	Url = {http://www.irisa.fr/visages/pdf/WiestDaessle07c.pdf},
+	Volume = {4792},
+	Year = {2007},
+	Bdsk-Url-1 = {http://www.irisa.fr/visages/pdf/WiestDaessle07c.pdf}}
+
+@incollection{WIESTDAESSLE:2008:INSERM-00332388:1,
+	Address = {New York, USA},
+	Booktitle = {Medical Image Computing and Computer Assisted Intervention, MICCAI'08},
+	Editor = {Metaxas, D.N. and Axel, Leon},
+	Number = {Lecture Notes in Computer Sciences},
+	Owner = {cbarillo},
+	Pages = {171--179},
+	Publisher = {Springer-Verlag},
+	Timestamp = {2008.12.19},
+	Title = {Rician noise removal by non-local means filtering for low signal-to-noise ratio MRI: Applications to DT-MRI},
+	Url = {http://www.hal.inserm.fr/inserm-00332388/en/},
+	Volume = {5241},
+	Year = {2008},
+	Bdsk-Url-1 = {http://www.hal.inserm.fr/inserm-00332388/en/}}
+
+@inproceedings{WiestDaessle07b,
+	Abstract = {A number of problems frequently encountered in brain image analysis
+	can be conveniently solved within a registration framework, such
+	as alignment of mono- or multi-sequence Magnetic Resonance Images
+	(MRI) for single or multiple subjects, computation of the cerebral
+	mid-sagittal plane in anatomical or diffusion-tensor MRI, correction
+	of acquisition distortions in diffusion-weighted MRI, etc. A widely
+	used approach for registration tasks consists of maximising a similarity
+	criterion between the intensities of the images to be matched. In
+	this context, efficient optimisation methods are needed to obtain
+	good performances. In this paper, we introduce a new optimisation
+	algorithm (called NEWUOA) to address the above registration problems,
+	and we demonstrate its robustness and accuracy properties},
+	Address = {Arlington, VA},
+	Booktitle = {IEEE International Symposium on Biomedical Imaging: From Nano to Macro, ISBI'2007},
+	Note = {inproceedings},
+	Pages = {41--44},
+	Publisher = {IEEE},
+	Title = {Validation of a new optimisation algorithm for registration tasks in medical imaging},
+	Url = {http://www.irisa.fr/visages/pdf/WiestDaessle07b.pdf},
+	Year = {2007},
+	Bdsk-Url-1 = {http://www.irisa.fr/visages/pdf/WiestDaessle07b.pdf}}
+
+@article{COUPE:2008:INRIA-00332014:1,
+	Abstract = {A critical issue in image restoration is the problem of noise removal
+	while keeping the integrity of relevant image information. Denoising
+	is a crucial step to increase image quality and to improve the performance
+	of all the tasks needed for quantitative imaging analysis. The method
+	proposed in this paper is based on a 3-D optimized blockwise version
+	of the nonlocal (NL)-means filter (Buades et al., 2005). The NL-means
+	filter uses the redundancy of information in the image under study
+	to remove the noise. The performance of the NL-means filter has
+	been already demonstrated for 2-D images, but reducing the computational
+	burden is a critical aspect to extend the method to 3-D images.
+	To overcome this problem, we propose improvements to reduce the
+	computational complexity. These different improvements allow to
+	drastically divide the computational time while preserving the performances
+	of the NL-means filter. A fully automated and optimized version
+	of the NL-means filter is then presented. Our contributions to the
+	NL-means filter are: 1) an automatic tuning of the smoothing parameter;
+	2) a selection of the most relevant voxels; 3) a blockwise implementation;
+	and 4) a parallelized computation. Quantitative validation was carried
+	out on synthetic datasets generated with BrainWeb (Collins et al.,
+	1998). The results show that our optimized NL-means filter outperforms
+	the classical implementation of the NL-means filter, as well as
+	two other classical denoising methods [anisotropic diffusion (Perona
+	and Malik, 1990)] and total variation minimization process (Rudin
+	et al., 1992) in terms of accuracy (measured by the peak signal-to-noise
+	ratio) with low computation time. Finally, qualitative results on
+	real data are presented},
+	Author = {Coup{\'e}, Pierrick and Yger, P. and Prima, Sylvain and Hellier, Pierre and Kervrann, C. and Barillot, Christian},
+	Date-Added = {2009-12-18 15:28:08 +0100},
+	Date-Modified = {2009-12-18 17:38:39 +0100},
+	Journal = {IEEE Transactions on Medical Imaging},
+	Number = {4},
+	Owner = {cbarillo},
+	Pages = {425--441},
+	Timestamp = {2008.12.19},
+	Title = {An Optimized Blockwise Non Local Means Denoising Filter for 3D Magnetic Resonance Images},
+	Url = {http://hal.inria.fr/inria-00332014/en/},
+	Volume = {27},
+	X-Editorial-Board = {yes},
+	X-International-Audience = {yes},
+	X-Pays = {FR},
+	X-Proceedings = {no},
+	Year = {2008},
+	Bdsk-Url-1 = {http://hal.inria.fr/inria-00332014/en/}}
