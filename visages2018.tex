@@ -756,6 +756,65 @@ The study of brain development provides insights in the normal trend of brain ev
 \end{participants}
 Simultaneous EEG/fMRI acquisition allows to measure brain activity at high spatial-temporal resolution. The localisation ofEEG sources depends on several parameters including the position of the electrodes on the scalp. The position of the MRelectrodes during its acquisitions is obtained with the use of the UTE sequence allowing their visualisation. The retrieval ofthe electrodes consists in obtaining the volume where the electrodes are located by applying a sphere detectionalgorithm. We detect around 90\% of electrodes for each subject, and our UTE-based electrode detection showed anaverage position error of 3.7mm for all subjects~\cite{fleury:hal-01874815}.
 
+% TODO: olivier proposait en 1 ou 2
+\subsection{Objective Evaluation of Multiple Sclerosis Lesion Segmentation using a Data Management and Processing Infrastructure}
+\begin{participants}
+      \pers{O.}{Commowick},
+      \pers{A.}{Istace},
+      \pers{M.}{Kain},
+      \pers{B.}{Laurent},
+      \pers{F.}{Leray},
+      \pers{M.}{Simon},
+      \pers{S. C.}{Pop},
+      \pers{P.}{Girard},
+      \pers{R.}{Ameli},
+      \pers{J.-C.}{Ferré},
+      \pers{A.}{Kerbrat},
+      \pers{T.}{Tourdias},
+      \pers{F.}{Cervenansky},
+      \pers{T.}{Glatard},
+      \pers{J.}{Beaumont},
+      \pers{S.}{Doyle},
+      \pers{F.}{Forbes},
+      \pers{J.}{Knight},
+      \pers{A.}{Khademi},
+      \pers{A.}{Mahbod},
+      \pers{C.}{Wang},
+      \pers{R.}{Mckinley},
+      \pers{F.}{Wagner},
+      \pers{J.}{Muschelli},
+      \pers{E.}{Sweeney},
+      \pers{E.}{Roura},
+      \pers{X.}{Lladó},
+      \pers{M. M.}{Santos},
+      \pers{W. P.}{Santos},
+      \pers{A. G.}{Silva-Filho},
+      \pers{X.}{Tomas-Fernandez},
+      \pers{H.}{Urien},
+      \pers{I.}{Bloch},
+      \pers{S.}{Valverde}
+      \pers{M.}{Cabezas},
+      \pers{F. J.}{Vera-Olmos},
+      \pers{N.}{Malpica},
+      \pers{C. R. G.}{Guttmann},
+      \pers{S.}{Vukusic},
+      \pers{G.}{Edan},
+      \pers{M.}{Dojat},
+      \pers{M.}{Styner},
+      \pers{S. K.}{Warfield},
+      \pers{F.}{Cotton},
+      \pers{C.}{Barillot}
+\end{participants}
+We present a study of multiple sclerosis segmentation algorithms conducted at the international MICCAI 2016 challenge. This challenge was operated using a new open-science computing infrastructure. This allowed for the automatic and independent evaluation of a large range of algorithms in a fair and completely automatic manner. This computing infrastructure was used to evaluate thirteen methods of MS lesions segmentation, exploring a broad range of state-of-the-art algorithms, against a high-quality database of 53 MS cases coming from four centers following a common definition of the acquisition protocol. Each case was annotated manually by an unprecedented number of seven different experts. Results of the challenge highlighted that automatic algorithms, including the recent machine learning methods (random forests, deep learning,...), are still trailing human expertise on both detection and delineation criteria. In addition, we demonstrate that computing a statistically robust consensus of the algorithms performs closer to human expertise on one score (segmentation) although still trailing on detection scores~\cite{commowick:inserm-01847873}
+
+\subsection{A Bayes Hilbert Space for Compartment Model Computing in Diffusion MRI}
+\begin{participants}
+      \pers{A.}{Stamm}
+      \pers{O.}{Commowick}
+      \pers{A.}{Menafoglio}
+      \pers{S. K.}{Warfield}
+\end{participants}
+The single diffusion tensor model for mapping the brain white matter microstructure has long been criticized as providing sensitive yet non-specific clinical biomarkers for neurodegenerative diseases because (i) voxels in diffusion images actually contain more than one homogeneous tissue population and (ii) diffusion in a single homogeneous tissue can be non-Gaussian. Analytic models for compartmental diffusion signals have thus naturally emerged but there is surprisingly little for processing such images (estimation, smoothing, registration, atlas-ing, statistical analysis). We propose to embed these signals into a Bayes Hilbert space that we properly define and motivate. This provides a unified framework for compartment diffusion image computing. Experiments show that (i) interpolation in Bayes space features improved robustness to noise compared to the widely used log-Euclidean space for tensors and (ii) it is possible to trace complex key pathways such as the pyramidal tract using basic deterministic tractography thanks to the combined use of Bayes interpolation and multi-compartment diffusion models~\cite{stamm:inserm-01937992}
 
 \end{module}
 
@@ -1492,7 +1551,7 @@ EIT Health aims to promote entrepreneurship and develop innovations in healthy l
 
     \subsubsection{Member of the Organizing Committees}
     \begin{itemize}
-        \item Brainhack Global Rennes 2018: \url{https://brainhack.irisa.fr}, May 25-26, Rennes, France (Claire Cury, Mathis Fleury).
+        \item Brainhack Global Rennes 2018: \url{https://brainhack.irisa.fr}, May 25-26, Rennes, France (Olivier Commowick, Claire Cury, Mathis Fleury).
     \end{itemize}    
     \subsubsection{Program Participant}
     \begin{itemize}
@@ -1505,8 +1564,9 @@ EIT Health aims to promote entrepreneurship and develop innovations in healthy l
     *TODO*
     \subsubsection{Reviewer}
     \begin{itemize}
-        \item ISBI (Pierre Maurel)
-        \item MICCAI (Francesca Galassi)
+        \item ISBI (Olivier Commowick, Pierre Maurel)
+        \item MICCAI (Olivier Commowick, Francesca Galassi)
+        \item IPMI (Olivier Commowick)
         \item African Conference on Research in Computer Science and Applied Mathematics (CARI) (Pierre Maurel)
     \end{itemize}   
 \subsection{Journal}
@@ -1515,9 +1575,18 @@ EIT Health aims to promote entrepreneurship and develop innovations in healthy l
     \subsubsection{Reviewer - Reviewing Activities}
     \begin{itemize}
         \item Journal of Alzheimer's disease (Claire Cury)
-        \item NeuroImage (Pierre Maurel)
+        \item NeuroImage (Olivier Commowick, Pierre Maurel)
+        \item IEEE TMI (Olivier Commowick)
+        \item Med Image Anal (Olivier Commowick)
     \end{itemize}    
 \subsection{Invited Talks}
+\begin{itemize}
+    \item C. Barillot, O.Commowick. ``Objective Evaluation of Multiple Sclerosis Lesion Segmentation using a Data Management and Processing Infrastructure'' - Journées françaises de radiologie - Paris (Oct 2018)~\cite{commowick:inserm-01895603}
+    \item O.Commowick. ``Objective Evaluation of Multiple Sclerosis Lesion Segmentation using a Data Management and Processing Infrastructure''. France Life Imaging workshop - Orsay (March 2018)
+    \item O. Commowick ``Towards Multiple Sclerosis Lesions Segmentation Transfer to the Clinics: Methods and Evaluation''. Gdr ISIS - Paris (March 2018)
+\end{itemize}
+
+
 *TODO*
 \subsection{Leadership within the Scientific Community}
 *TODO*
@@ -1542,10 +1611,10 @@ EIT Health aims to promote entrepreneurship and develop innovations in healthy l
     \item ENS Rennes: Pierre Maurel, Introduction to image processing (24h)
     \item Pierre-Yves Jonin, Introduction aux méthodes de neuroimagerie pour la recherche en neuropsychologie (3h) Master 2. Université de Poitiers, France.
     \item Pierre-Yves Jonin,Evaluation neuropsychologique à visée diagnostique. Le cas des syndromes démentiels. Master 2 (2 x 6h) Université de Poitiers, France.
-    \item Pierre-Yves Jonin,L’exploration neuropsychologique des maladies neurologiques et psychiatriques. 4ème & 5ème année de médecine (4h), Université de Brest, France.
+    \item Pierre-Yves Jonin,L'exploration neuropsychologique des maladies neurologiques et psychiatriques. 4ème & 5ème année de médecine (4h), Université de Brest, France.
     \item Pierre-Yves Jonin, Neurosciences cognitives de la mémoire humaine. Master 2. 3 heures. Université de Rennes 1, France.
     \item Pierre-Yves Jonin, Les syndromes neuropsychologiques. Licence 3, (16h) Université de Rennes 2, France
-    \item Pierre-Yves Jonin, L’approche neuropsychologique du handicap chez les patients cérébro-lésés. Licence 3. Université de Rennes 2.
+    \item Pierre-Yves Jonin, L'approche neuropsychologique du handicap chez les patients cérébro-lésés. Licence 3. Université de Rennes 2.
     \item Pierre-Yves Jonin, Evaluation neuropsychologique à visée diagnostique. Le cas des syndromes démentiels. Master 2. 2 x 6 heures. Université de Rennes 2.
     \item Pierre-Yves Jonin, Méthodologie de la recherche clinique. Master 2. 3 heures. Université de Rennes 2.
     \item Pierre-Yves Jonin, Méthodologie clinique et principes de l’évaluation neuropsychologique à visée diagnostique. Master 2. 3h30. Université de Savoie.
@@ -1554,6 +1623,7 @@ EIT Health aims to promote entrepreneurship and develop innovations in healthy l
     \item Mathis Fleury, Mathématiques; 64h (3 months); Licence; IUT saint-Malo, France.
     \item Francesca Galassi, L1 INF1 : Programming in Java (TD : 20h, TP : 20h), ISTIC University of Rennes 1, France.
     \item Francesca Galassi, L2 PO : Object Oriented Programming in Java (TP : 20h), ISTIC University of Rennes 1.
+    \item Olivier Commowick, Master SIBM, University of Angers-Brest-Rennes (Plenary: 6h), France.
  \end{itemize}
 
 %% Ce modulef présente vos activités d'enseignement et d'encadrement à présenter comme suit :
@@ -1591,11 +1661,17 @@ EIT Health aims to promote entrepreneurship and develop innovations in healthy l
            %%\item PhD : nom du doctorant, titre du mémoire, nom de l'Université, date de soutenance, encadrant(s)
            %%\item PhD in progress : Nom du doctorant, titre (provisoire) du mémoire, date du début de la thèse, encadrant(s)
   %%\end{itemize}
-
+ \subsubsection{PhD \& HdR}
  \begin{itemize}
   \XMLaddatt*{type}{sanspuces}
            \item PhD in progress: Cédric Meurée, ``''Quantitative Analysis Of Arterial Spin Labeling MRI For Robust Parametric Information Of Perfusion Maps'', Inria / Siemens, from Mar 2014, Christian Barillot, Pierre Maurel.
            \item PhD in progress : Corentin Vallée, "Joint estimation of neuronal activation, resting-state and basal metabolism from Arterial Spin Labeling", Univ. Rennes, from Nov 2016, Christian Barillot, Isabelle Corouge, Pierre Maurel.
+  \end{itemize}
+
+  \subsubsection{Other supervisions}
+  \begin{itemize}
+  \XMLaddatt*{type}{sanspuces}
+           \item Master student: Solene Tarride, ``''Deep learning for segmentation of MS lesions from multimodal MRI'', Apr-Oct 2018, Francesca Galassi.
   \end{itemize}
 
 \subsection {Juries}
@@ -1659,6 +1735,7 @@ EIT Health aims to promote entrepreneurship and develop innovations in healthy l
     \item Universités du Temps Libre de Bretagne - Pierre-Yves Jonin: Series of 6 talks on neuropsychology, Jan-Dec, Rennes, France. 
     \item Bien Vieillir en Ille-et-Vilaine - Pierre-Yves Jonin: Talk ``La mémoire humaine, comment la conserver, quand s’inquiéter'', June, Rennes, France. 
     \item Journée des métiers IUT rennes - Mathis Fleury: Talk ``TODO'', TODO, IUT Rennes, France. %TODO: quand, titre
+    \item Journée LOGIN - Olivier Commowick: Presentation of research done in VisAGeS on medical image processing and of the MedInria software, Nov 27, Grenoble, France. 
 \end{itemize}
       
 
