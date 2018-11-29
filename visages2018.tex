@@ -741,6 +741,13 @@ Demyelination, axonal damage and inflammation are critical indicators of the ons
 Resting-state functional Arterial Spin Labeling (rs-fASL) in clinical daily practice and academic research stay discreet compared to resting-state BOLD. However, by giving direct access to cerebral blood flow maps, rs-fASL leads to significant clinical subject scaled application as CBF can be considered as a biomarker in common neuropathology. Our work here focuses on the link between overall quality of rs-fASL and duration of acquisition. To this end, we consider subject self-Default Mode Network (DMN), and assess DMN quality depletion compared to a gold standard DMN depending on the duration of acquisition~\cite{vallee:inserm-01935089}.
 
 
+\subsection{Optimal selection of diffusion-weighting gradient waveforms using compressed sensing and dictionary learning}
+\begin{participants}
+      \pers{Raphaël}{Truffet}
+      \pers{Emmanuel}{Caruyer}
+\end{participants}
+Acquisition sequences in diffusion MRI rely on the use time-dependent magnetic field gradients. Each gradient waveform encodes a diffusion weighted measure; a large number of such measurements are necessary for the in vivo reconstruction of microstructure parameters. We propose here a method to select only a subset of the measurements while being able to predict the unseen data using compressed sensing. We learn a dictionary using a training dataset generated with Monte-Carlo simulations; we then compare two different heuristics to select the measures to use for the prediction. We found that an undersampling strategy limiting the redundancy of the measures allows for a more accurate reconstruction when compared with random undersampling with similar sampling rate~\cite{truffet:inserm-01939066}.
+
 
 \end{module}
 
@@ -1437,6 +1444,7 @@ EIT Health aims to promote entrepreneurship and develop innovations in healthy l
 \XMLaddatt*{type}{sanspuces}
      \item Master: Cédric Meurée, Algorithms and Complexity, 28h, M1, ESIR, France
      \item Master: Corentin Vallée, Machine Learning, 64h, M1, Univ. Rennes, France
+     \item Licence: Raphaël Truffet, Génie Logiciel, 24h, L2, ISTIC, France
  \end{itemize}
 
 %% Ce modulef présente vos activités d'enseignement et d'encadrement à présenter comme suit :
