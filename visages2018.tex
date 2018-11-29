@@ -672,17 +672,6 @@ Extraction and exploitation of complex imaging biomarkers involve an imaging pro
 \end{participants}
 Arterial spin labeling is a magnetic resonance perfusion imaging technique that, while providing results comparable to methods currently considered as more standard concerning the quantification of the cerebral blood flow, is subject to limitations related to its low signal-to-noise ratio and low resolution. In this work, we investigate the relevance of using a non-local patch-based super-resolution method driven by a high-resolution structural image to increase the level of details in arterial spin labeling images. This method is evaluated by comparison with other image dimension increasing techniques on a simulated dataset, on images of healthy subjects and on images of subjects diagnosed with brain tumors, who had a dynamic susceptibility contrast acquisition. The influence of an increase of ASL images resolution on partial volume effects is also investigated in this work.~\cite{meuree:inserm-01880726}
 
-\subsection{Bimodal EEG-fMRI Neurofeedback for Stroke Rehabilitation: a Case Report}
-\begin{participants}
-      \pers{Giulia}{Lioi}, 
-      \pers{Mathis}{Fleury}, 
-      \pers{Simon}{Butet},
-      \pers{Anatole}{Lécuyer},
-      \pers{Christian}{Barillot},
-      \pers{Isabelle}{Bonan}.
-\end{participants}
-Neurofeedback  (NF)  consists  on  training  self-regulation  of  brain  activity  by  providing  real-time information about the participant brain function.  Few works have shown the potential of NF for stroke rehabilitation however its effectiveness has not been investigated yet. NF approaches are usually based on real-time monitoring of brain activity using a single imaging technique.  Recent studies have revealed the potential of combining EEG and fMRI to achieve a more efficient and specific self-regulation. In this case report, we tested the feasibility of applying bimodal EEG-MRI NF on two stroke patients.~\cite{lioi:inserm-01932954}
-
 
 %TODO: could also go in axis 2...
 \subsection{Identification of Gadolinium contrast enhanced regions in MS lesions using brain tissue microstructure information obtained from diffusion and T2 relaxometry MRI}
@@ -748,11 +737,41 @@ Resting-state functional Arterial Spin Labeling (rs-fASL) in clinical daily prac
 \end{participants}
 Acquisition sequences in diffusion MRI rely on the use time-dependent magnetic field gradients. Each gradient waveform encodes a diffusion weighted measure; a large number of such measurements are necessary for the in vivo reconstruction of microstructure parameters. We propose here a method to select only a subset of the measurements while being able to predict the unseen data using compressed sensing. We learn a dictionary using a training dataset generated with Monte-Carlo simulations; we then compare two different heuristics to select the measures to use for the prediction. We found that an undersampling strategy limiting the redundancy of the measures allows for a more accurate reconstruction when compared with random undersampling with similar sampling rate~\cite{truffet:inserm-01939066}.
 
+\subsection{Anisotropic similarity, a constrained affine transformation: Application to brain development analysis}
+\begin{participants}
+      \pers{A.}{Legouhy}
+      \pers{O.}{Commowick}
+      \pers{F.}{Rousseau}
+      \pers{C.}{Barillot}
+\end{participants}
+The study of brain development provides insights in the normal trend of brain evolution and enables early detection of abnormalities. We propose a method to quantify brain growth in three arbitrary orthogonal directions of the brain through linear registration. We introduce a 9 degrees of freedom transformation that gives the opportunity to extract scaling factors describing brain growth along those directions by registering a database of subjects in a common basis. We apply this framework to create longitudinal curves of scaling ratios along fixed orthogonal directions from 0 to 16 years highlighting anisotropic brain development~\cite{legouhy:inserm-01871274}.
+
+\subsection{Automatic Electrodes Detection during simultaneous EEG/fMRI acquisition}
+\begin{participants}
+      \pers{M.}{Fleury}
+      \pers{P.}{Maurel}
+      \pers{M.}{Mano}
+      \pers{E.}{Bannier}
+      \pers{C.}{Barillot}
+\end{participants}
+Simultaneous EEG/fMRI acquisition allows to measure brain activity at high spatial-temporal resolution. The localisation ofEEG sources depends on several parameters including the position of the electrodes on the scalp. The position of the MRelectrodes during its acquisitions is obtained with the use of the UTE sequence allowing their visualisation. The retrieval ofthe electrodes consists in obtaining the volume where the electrodes are located by applying a sphere detectionalgorithm. We detect around 90\% of electrodes for each subject, and our UTE-based electrode detection showed anaverage position error of 3.7mm for all subjects~\cite{fleury:hal-01874815}.
+
 
 \end{module}
 
 
 \begin{module}{resultats}{res-02}{Research axis 2: Applications in Neuroradiology and Neurological Disorders}
+
+\subsection{Bimodal EEG-fMRI Neurofeedback for Stroke Rehabilitation: a Case Report}
+\begin{participants}
+      \pers{Giulia}{Lioi}, 
+      \pers{Mathis}{Fleury}, 
+      \pers{Simon}{Butet},
+      \pers{Anatole}{Lécuyer},
+      \pers{Christian}{Barillot},
+      \pers{Isabelle}{Bonan}.
+\end{participants}
+Neurofeedback  (NF)  consists  on  training  self-regulation  of  brain  activity  by  providing  real-time information about the participant brain function.  Few works have shown the potential of NF for stroke rehabilitation however its effectiveness has not been investigated yet. NF approaches are usually based on real-time monitoring of brain activity using a single imaging technique.  Recent studies have revealed the potential of combining EEG and fMRI to achieve a more efficient and specific self-regulation. In this case report, we tested the feasibility of applying bimodal EEG-MRI NF on two stroke patients.~\cite{lioi:inserm-01932954}
 
 % TODO: Could also go in 3
 \subsection{Statistical Shape Analysis of Large Datasets Based on Diffeomorphic Iterative Centroids}
@@ -805,7 +824,26 @@ The acquisition of new semantic memories is sometimes preserved in patients with
       \pers{Christian}{Barillot},
       \pers{Emmanuel}{Barbeau},
 \end{participants}
-We tested a core prediction of the retrieval effort hypothesis as an account for the testing effect (TE). Retrieval effort predicts that automatic, effortful retrieval should not lead to TE. Experiment 1 (N=76) showed that despite an encoding duration of three times less, object pictures retention is better after repeated testing under Old/New recognition conditions, than following repeated study. Experiment 2 (N=30) used a speeded and accuracy boosting procedure to rule out the contribution of recollection to retrieval. Retention of object pictures at 25 minutes and 6 months was similar after repeated testing or after repeated studying. These results call for a revision of the retrieval effort hypothesis as a mechanistic account of TE~\cite{jonin:inserm-01939069]}.
+We tested a core prediction of the retrieval effort hypothesis as an account for the testing effect (TE). Retrieval effort predicts that automatic, effortful retrieval should not lead to TE. Experiment 1 (N=76) showed that despite an encoding duration of three times less, object pictures retention is better after repeated testing under Old/New recognition conditions, than following repeated study. Experiment 2 (N=30) used a speeded and accuracy boosting procedure to rule out the contribution of recollection to retrieval. Retention of object pictures at 25 minutes and 6 months was similar after repeated testing or after repeated studying. These results call for a revision of the retrieval effort hypothesis as a mechanistic account of TE~\cite{jonin:inserm-01939069}.
+
+
+\subsection{Voxel-wise Comparison with a-contrario Analysis for Automated Segmentation of Multiple Sclerosis Lesions from Multimodal MRI}
+\begin{participants}
+      \pers{Francesca}{Galassi}
+      \pers{Olivier}{Commowick},
+      \pers{Emmanuel}{Vallee},
+      \pers{Christian}{Barillot},
+\end{participants}
+We introduce a new framework for the automated and un-supervised segmentation of Multiple Sclerosis lesions from multimodal Magnetic Resonance images. It relies on a voxel-wise approach to detect local white matter abnormalities, with an a-contrario analysis, which takes into account local information. First, a voxel-wise comparison of multimodal patient images to a set of controls is performed. Then, region-based probabilities are estimated using an a-contrario approach. Finally, correction for multiple testing is performed. Validation was undertaken on a multi-site clinical dataset of 53 MS patients with various number and volume of lesions. We showed that the proposed framework outperforms the widely used FDR-correction for this type of analysis, particularly for low lesion loads~\cite{galassi:inserm-01888928}.
+
+\subsection{Integration of Probabilistic Atlas and Graph Cuts for Automated Segmentation of Multiple Sclerosis lesions}
+\begin{participants}
+      \pers{Francesca}{Galassi}
+      \pers{Olivier}{Commowick},
+      \pers{Christian}{Barillot},
+\end{participants}
+We propose a framework for automated segmentation of Multiple Sclerosis (MS) lesions
+from MR brain images. It integrates a priori tissues and MS lesions information into a Graph-Cuts algorithm for improved segmentation results.~\cite{galassi:hal-01823801}.
 
 \end{module}
 
@@ -866,7 +904,14 @@ The PhD of Cédric Meurée is funded by Siemens Healthineers under a CIFRE grant
 
 \begin{module}{partenariat}{regional}{Regional Initiatives}
 %% ICI Vous pouvez ecrire du texte
-*TODO*
+
+\subsection{INCR}
+    \begin{participants}
+      \pers{Francesca}{Galassi}
+    \end{participants}
+The objective of this project is to investigate algorithms aimed at detecting, segmenting and following overtime the MS lesions, robustly enough to work on a multi-site clinical database. Methods are being evaluated on an amount of training and testing MS images with high quality segmentations from radiographers.
+The goal is to integrate the developed framework into a production workflow that will be employed by the clinical health network MUltiple Sclerosis Imaging Check-out (MUSIC), covering the western part of France.
+
 \end{module}
 
 
@@ -1447,8 +1492,12 @@ EIT Health aims to promote entrepreneurship and develop innovations in healthy l
 
     \subsubsection{Member of the Organizing Committees}
     \begin{itemize}
-        \item Brainhack Global Rennes 2018: \url{https://brainhack.irisa.fr}, May 25-26, Rennes, France (Claire Cury).
+        \item Brainhack Global Rennes 2018: \url{https://brainhack.irisa.fr}, May 25-26, Rennes, France (Claire Cury, Mathis Fleury).
     \end{itemize}    
+    \subsubsection{Program Participant}
+    \begin{itemize}
+        \item Organizer of the project 'A deep learning playground', Brainhack Global Rennes 2018: \url{https://brainhack.irisa.fr}, May 25-26, Rennes, France (Francesca Galassi).
+    \end{itemize}  
 \subsection {Scientific Events Selection}
     \subsubsection{Chair of Conference Program Committees}
     *TODO*
@@ -1457,6 +1506,7 @@ EIT Health aims to promote entrepreneurship and develop innovations in healthy l
     \subsubsection{Reviewer}
     \begin{itemize}
         \item ISBI (Pierre Maurel)
+        \item MICCAI (Francesca Galassi)
         \item African Conference on Research in Computer Science and Applied Mathematics (CARI) (Pierre Maurel)
     \end{itemize}   
 \subsection{Journal}
@@ -1499,7 +1549,11 @@ EIT Health aims to promote entrepreneurship and develop innovations in healthy l
     \item Pierre-Yves Jonin, Evaluation neuropsychologique à visée diagnostique. Le cas des syndromes démentiels. Master 2. 2 x 6 heures. Université de Rennes 2.
     \item Pierre-Yves Jonin, Méthodologie de la recherche clinique. Master 2. 3 heures. Université de Rennes 2.
     \item Pierre-Yves Jonin, Méthodologie clinique et principes de l’évaluation neuropsychologique à visée diagnostique. Master 2. 3h30. Université de Savoie.
-
+    \item Antoine Legouhy, Bio-statistques 34h, L2 biologie, Univ. Rennes 1, France.
+    \item Antoine Legouhy, Optimisation 12h, M1 mathématiques, Univ. Rennes 1, France.
+    \item Mathis Fleury, Mathématiques; 64h (3 months); Licence; IUT saint-Malo, France.
+    \item Francesca Galassi, L1 INF1 : Programming in Java (TD : 20h, TP : 20h), ISTIC University of Rennes 1, France.
+    \item Francesca Galassi, L2 PO : Object Oriented Programming in Java (TP : 20h), ISTIC University of Rennes 1.
  \end{itemize}
 
 %% Ce modulef présente vos activités d'enseignement et d'encadrement à présenter comme suit :
@@ -1598,10 +1652,13 @@ EIT Health aims to promote entrepreneurship and develop innovations in healthy l
   %%\end{itemize}
 \begin{itemize}
     \item Semaine du cerveau - Giulia Lioi: Talk ``Lire dans son cerveau grâce au neurofeedback EEG, c’est mieux bouger'', March 14, Warpzone, Rennes, France. 
-    \item Village des sciences - Julie Coloigner; Francesca Galassi; Antoine Legouhy; Corentin Vallée: Description of MR modalities and work of VISAGES team to the genreal public, Oct 5-7, Rennes, France. 
+    \item Village des sciences - Julie Coloigner; Antoine Legouhy; Corentin Vallée, Mathis Fleury: Description of MR modalities and work of VISAGES team to the genreal public, Oct 5-7, Rennes, France. 
+    \begin{itemize}
+        \item Presentation of MedInria software platform: Francesca Galassi.
+    \end{itemize}
     \item Universités du Temps Libre de Bretagne - Pierre-Yves Jonin: Series of 6 talks on neuropsychology, Jan-Dec, Rennes, France. 
     \item Bien Vieillir en Ille-et-Vilaine - Pierre-Yves Jonin: Talk ``La mémoire humaine, comment la conserver, quand s’inquiéter'', June, Rennes, France. 
-
+    \item Journée des métiers IUT rennes - Mathis Fleury: Talk ``TODO'', TODO, IUT Rennes, France. %TODO: quand, titre
 \end{itemize}
       
 
