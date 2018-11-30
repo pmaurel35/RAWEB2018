@@ -850,6 +850,19 @@ Despite the extensive therapy options available for depression, treatment-resist
 \end{participants}
 *TODO*~\cite{coloigner:hal-01890087}
 
+\subsection{Validity of summary statistics-based mixed-effects group fMRI}
+\begin{participants}
+      \pers{Camille}{Maumet}
+      \pers{Thomas}{Nichols}
+\end{participants}
+Statistical analysis of multi-subject functional Magnetic Resonance Imaging (fMRI) data is traditionally done using either: 1) a mixed-effects GLM (MFX GLM) where within-subject variance estimates are used and incorporated into per-subject weights or 2) a random-effects General linear model (GLM) (RFX GLM) where within-subject variance estimates are not used. Both approaches are implemented and available in major neuroimaging software packages including: SPM (MFX analysis; 2nd-Level statistics), FSL (FLAME; OLS) and AFNI (3dMEMA; 3dttest++). While MFX GLM provides the most efficient statistical estimate, its properties are only guaranteed in large samples, and it has been shown that RFX GLM is a valid alternative for one-sample group analyses in fMRI [1]. We recently showed that MFX GLM for image-based meta-analysis could lead to invalid results in small-samples. Here, we investigate whether this issue also affects group fMRI~\cite{maumet:inserm-01887911}.
+
+\subsection{Choosing a practical and valid Image-Based Meta-Analysis}
+\begin{participants}
+      \pers{Camille}{Maumet}
+\end{participants}
+Meta-analysis provides a quantitative approach to summarise the rich functional Magnetic Resonance Imaging (fMRI) literature. When image data is available for each study, the optimal approach is to perform an Image-Based Meta-Analysis (IBMA) [1]. A number of IBMA approaches have been proposed including combination of standardised statistics (Z's), just effect estimates (E's) or both effect estimates and their standard errors (SE's). While using both E’s \& SE’s and estimating between-study variance should be optimal, the methods are not guaranteed to work for small number of studies. Also, often only standardised estimates are shared, reducing the possible meta-analytic approaches. Finally, because the BOLD signal is non-quantitative care has to be taken in order to insure that E's are expressed in the same units [2,3], especially when combining data from different software packages. Given the growing interest in data sharing in the neuroimaging community there is a need to identify what is the minimal data to be shared in order to allow for future IBMAs. Here, we investigate the validity of 8 IBMA approaches~\cite{maumet:inserm-01933032}.
+
 \end{module}
 
 
@@ -941,7 +954,60 @@ from MR brain images. It integrates a priori tissues and MS lesions information 
 \end{module}
 
 \begin{module}{resultats}{res-03}{Research axis 3: Management of Information in Neuroimaging}
-Management of Information in Neuroimaging: 
+
+\subsection{Open Science for the Neuroinformatics community}
+\begin{participants}
+      \pers{Sorina}{Pop}
+      \pers{Axel}{Bonnet}
+      \pers{Camille}{Maumet}
+      \pers{Michael}{Kain}
+      \pers{Christian}{Barillot}
+      \pers{Tristan}{Glatard}
+\end{participants}
+The Neuroinformatics community in OpenAire-Connect is represented by members of the France Life Imaging (FLI) collaboration. In this context, we aim at leveraging OpenAire-Connect services and give our community members the possibility to easily publish and exchange research artefacts from FLI platforms, such as VIP and Shanoir. This will enable open and reproducible science, since literature, data, and methods can be linked, retrieved, and replayed by all the members of the community~\cite{pop:inserm-01846994}.
+
+\subsection{Interoperability with Boutiques and CARMIN}
+\begin{participants}
+      \pers{Sorina}{Pop}
+      \pers{Axel}{Bonnet}
+      \pers{Camille}{Maumet}
+      \pers{Michael}{Kain}
+      \pers{Christian}{Barillot}
+      \pers{Tristan}{Glatard}
+\end{participants}
+A growing number of platforms and tools have lately been developed to meet the needs of various scientific communities. Most of these solutions are optimized to specific requirements from different user groups, leading to technological fragmentation and lack of interoperability. In our quest of open and reproducible science, we propose two complementary tools, Boutiques and CARMIN, providing cross-platform interoperability for scientific applications, data sharing and processing~\cite{pop:inserm-01846997}.
+
+\subsection{A standardised representation for non-parametric fMRI results}
+\begin{participants}
+      \pers{Camille}{Maumet}
+      \pers{Guillaume}{Flandin},
+      \pers{Martin}{Perez-Guevara},
+      \pers{Jean-Baptiste}{Poline},
+      \pers{Justin}{Rajendra},
+      \pers{Richard}{Reynolds},
+      \pers{Bertrand}{Thirion},
+      \pers{Thomas}{Nichols}
+\end{participants}
+Reuse of data collected and analysed at another site is becoming more prevalent in the neuroimaging community (cf. for example (Milham et al. 2017)) but this process usually relies on intensive data and metadata curation. Given the ever-increasing number of research datasets produced and shared, it is desirable to rely on standards that will enable automatic data and metadata retrieval for large-scale analyses (Wilkinson et al. 2016). We recently introduced NIDM-Results (Maumet et al. 2016), a data model to represent and publish data and metadata created as part of a mass univariate neuroimaging study (typically functional magnetic resonance imaging). Here we extend this model to allow for the representation of non-parametric analyses and we introduce a JSON API that will facilitate export into NIDM-Results~\cite{maumet:inserm-01828914}.
+
+\subsection{Development of an Ontology for the INCF Neuroimaging Data Model (NIDM)}
+\begin{participants}
+      \pers{Camille}{Maumet}
+\end{participants}
+The successful reuse of shared data relies on the existence of easily-available well-described metadata [1]. The metadata, as a rich description of the data, must capture information on how the data was acquired, processed and analyzed. The terms used to describe the data should be chosen with a logical, consistent framework in mind and include definitions to avoid ambiguity. In addition, a lexicon or ontology should reuse terms from existing efforts as much as possible [2]~\cite{helmer:inserm-01932994}.
+
+\subsection{Development of an Ontology for the INCF Neuroimaging Data Model (NIDM)}
+\begin{participants}
+      \pers{Camille}{Maumet}
+\end{participants}
+A wealth of analysis tools are available to fMRI researchers in order to extract patterns of task variation and, ultimately, understand cognitive function. However, this 'methodological plurality' comes with a drawback. While conceptually similar, two different analysis pipelines applied on the same dataset may not produce the same scientific results. Differences in methods, implementations across software packages, and even operating systems or software versions all contribute to this variability. Consequently, attention in the field has recently been directed to reproducibility and data sharing. Neuroimaging is currently experiencing a surge in initiatives to improve research practices and ensure that all conclusions inferred from an fMRI study are replicable. In this work, our goal is to understand how choice of software package impacts on analysis results. We use publically shared data from three published task fMRI neuroimaging studies, reanalyzing each study using the three main neuroimaging software packages, AFNI, FSL and SPM, using parametric and nonparametric inference. We obtain all information on how to process, analyze, and model each dataset from the publications. We make quantitative and qualitative comparisons between our replications to gauge the scale of variability in our results and assess the fundamental differences between each software package. While qualitatively we find broad similarities between packages, we also discover marked differences, such as Dice similarity coefficients ranging from 0.000-0.743 in comparisons of thresholded statistic maps between software. We discuss the challenges involved in trying to reanalyse the published studies, and highlight our own efforts to make this research reproducible~\cite{bowring:inserm-01933019,bowring:inserm-01760535}.
+
+\subsection{Detecting and Interpreting Heterogeneity and Publication Bias in Image-Based Meta-Analyses}
+\begin{participants}
+      \pers{Camille}{Maumet}
+\end{participants}
+With the increase of data sharing, meta-analyses are becoming increasingly important in the neuroimaging community. They provide a quantitative summary of published results and heightened confidence due to higher statistical power. The gold standard approach to combine results from neuroimaging studies is an Image-Based Meta-Analysis (IBMA) [1] in which group-level maps from different studies are combined. Recently, we have introduced the IBMA toolbox, an extension for SPM that provides methods for combining image maps from multiple studies [2]. However, the current toolbox lacks diagnostic tools used to assess critical assumptions of meta-analysis, in particular whether there is inter-study variation requiring random-effects IBMA, and whether publication bias is present. Here, we present two new tools added to the IBMA toolbox to detect heterogeneity and to assess evidence of publication bias~\cite{maullinsapey:inserm-01933023}.
+
 \end{module}
 
 %%\begin{module}{resultats}{new2}{New result 2}
