@@ -680,12 +680,15 @@ Extraction and exploitation of complex imaging biomarkers involve an imaging pro
 
 \subsection{Diffusion imaging}
 
+\subsubsection{Optimal selection of diffusion-weighting gradient waveforms using compressed sensing and dictionary learning}
+\begin{participants}
+      \pers{Raphaël}{Truffet}
+      \pers{Emmanuel}{Caruyer}
+\end{participants}
+Acquisition sequences in diffusion MRI rely on the use time-dependent magnetic field gradients. Each gradient waveform encodes a diffusion weighted measure; a large number of such measurements are necessary for the in vivo reconstruction of microstructure parameters. We propose here a method to select only a subset of the measurements while being able to predict the unseen data using compressed sensing. We learn a dictionary using a training dataset generated with Monte-Carlo simulations; we then compare two different heuristics to select the measures to use for the prediction. We found that an undersampling strategy limiting the redundancy of the measures allows for a more accurate reconstruction when compared with random undersampling with similar sampling rate~\cite{truffet:inserm-01939066}.
+
 \subsection{Arterial Spin Labeling}
-
-\subsection{Quantitative imaging}
-
-
-\subsection{Patch-Based Super-Resolution of Arterial Spin Labeling Magnetic Resonance Images}
+\subsubsection{Patch-Based Super-Resolution of Arterial Spin Labeling Magnetic Resonance Images}
 \begin{participants}
       \pers{Cédric}{Meurée}, 
       \pers{Pierre}{Maurel}, 
@@ -694,9 +697,19 @@ Extraction and exploitation of complex imaging biomarkers involve an imaging pro
 \end{participants}
 Arterial spin labeling is a magnetic resonance perfusion imaging technique that, while providing results comparable to methods currently considered as more standard concerning the quantification of the cerebral blood flow, is subject to limitations related to its low signal-to-noise ratio and low resolution. In this work, we investigate the relevance of using a non-local patch-based super-resolution method driven by a high-resolution structural image to increase the level of details in arterial spin labeling images. This method is evaluated by comparison with other image dimension increasing techniques on a simulated dataset, on images of healthy subjects and on images of subjects diagnosed with brain tumors, who had a dynamic susceptibility contrast acquisition. The influence of an increase of ASL images resolution on partial volume effects is also investigated in this work.~\cite{meuree:inserm-01880726}
 
+\subsubsection{Resting-state ASL : Toward an optimal sequence duration}
+\begin{participants}
+      \pers{Corentin}{Vallée}
+      \pers{Pierre}{Maurel}, 
+      \pers{Isabelle}{Corouge},
+      \pers{Christian}{Barillot},
+\end{participants}
+Resting-state functional Arterial Spin Labeling (rs-fASL) in clinical daily practice and academic research stay discreet compared to resting-state BOLD. However, by giving direct access to cerebral blood flow maps, rs-fASL leads to significant clinical subject scaled application as CBF can be considered as a biomarker in common neuropathology. Our work here focuses on the link between overall quality of rs-fASL and duration of acquisition. To this end, we consider subject self-Default Mode Network (DMN), and assess DMN quality depletion compared to a gold standard DMN depending on the duration of acquisition~\cite{vallee:inserm-01935089}.
 
+
+\subsection{Quantitative imaging}
 %TODO: could also go in axis 2...
-\subsection{Identification of Gadolinium contrast enhanced regions in MS lesions using brain tissue microstructure information obtained from diffusion and T2 relaxometry MRI}
+\subsubsection{Identification of Gadolinium contrast enhanced regions in MS lesions using brain tissue microstructure information obtained from diffusion and T2 relaxometry MRI}
 \begin{participants}
       \pers{S.}{Chatterjee}
       \pers{O.}{Commowick}, 
@@ -707,7 +720,7 @@ Arterial spin labeling is a magnetic resonance perfusion imaging technique that,
 A multiple sclerosis (MS) lesion at an early stage undergoes active blood brain barrier (BBB) breakdown. Identifying MS lesions in a patient which are undergoing active BBB breakdown is of critical importance for MS burden evaluation and treatment planning. However in non-contrast enhanced structural magnetic resonance imaging (MRI) the regions of the lesion undergoing active BBB breakdown cannot be distinguished from the other parts of the lesion. Hence gadolinium (Gd) contrast enhanced T1-weighted MR images are used for this task. However some side effects of Gd injection into patients have been increasingly reported recently. The BBB breakdown is reflected by the condition of tissue microstructure such as increased inflammation, presence of higher extra-cellular matter and debris. We thus propose a framework to predict enhancing regions in MS lesions using tissue microstructure information derived from T2 relaxometry and diffusion MRI (dMRI) multicompartment models. We show that combination of the dMRI and T2 relaxometry microstructure information can distinguish the Gd enhancing lesion regions from the other regions in MS lesions~\cite{chatterjee:hal-01830532}.
 
 
-\subsection{Multi-Compartment Model of Brain Tissues from T2 Relaxometry MRI Using Gamma Distribution}
+\subsubsection{Multi-Compartment Model of Brain Tissues from T2 Relaxometry MRI Using Gamma Distribution}
 \begin{participants}
       \pers{S.}{Chatterjee}
       \pers{O.}{Commowick}, 
@@ -718,7 +731,7 @@ A multiple sclerosis (MS) lesion at an early stage undergoes active blood brain 
 The brain microstructure, especially myelinated axons and free fluids, may provide useful insight into brain neurodegenerative diseases such as multiple sclerosis (MS). These may be distinguished based on their transverse relaxation times which can be measured using T2 relaxometry MRI. However, due to physical limitations on achievable resolution, each voxel contains a combination of these tissues, rendering the estimation complex. We present a novel multi-compartment T2 (MCT2) estimation based on variable projection, applicable to any MCT2 microstructure model. We derive this estimation for a three-gamma distribution model. We validate our framework on synthetic data and illustrate its potential on healthy volunteer and MS patient data~\cite{chatterjee:hal-01744852}.
 
 % TODO: Could also go in axis 2
-\subsection{A 3-year follow-up study of enhancing and non-enhancing multiple sclerosis (MS) lesions in MS patients demonstrating clinically isolated syndrome (CIS) using a multi-compartment T2 relaxometry (MCT2) model}
+\subsubsection{A 3-year follow-up study of enhancing and non-enhancing multiple sclerosis (MS) lesions in MS patients demonstrating clinically isolated syndrome (CIS) using a multi-compartment T2 relaxometry (MCT2) model}
 \begin{participants}
       \pers{S.}{Chatterjee}
       \pers{O.}{Commowick}, 
@@ -731,7 +744,7 @@ The brain microstructure, especially myelinated axons and free fluids, may provi
 Obtaining information on condition of tissue microstructures (such as myelin, intra/extra cellular cells, free water) can provide important insights into MS lesion. However, MRI voxels are heterogeneous in terms of tissue microstructure due to the limited imaging resolution owing to existing physical limitations of MRI scanners. Here we evaluated a multi-compartment T2 relaxometry model and then used it to study the evolution of enhancing (USPIO and gadolinium positive) and non-enhancing lesions in 6 MS patients with CIS characteristics over a period 3 years with 7 follow-up scans post baseline~\cite{chatterjee:hal-01821694}.
 
 % TODO: Could also go in axis 2
-\subsection{A three year follow-up study of gadolinium enhanced and non-enhanced regions in multiple sclerosis lesions using a multi-compartment T2 relaxometry model}
+\subsubsection{A three year follow-up study of gadolinium enhanced and non-enhanced regions in multiple sclerosis lesions using a multi-compartment T2 relaxometry model}
 \begin{participants}
       \pers{S.}{Chatterjee}
       \pers{O.}{Commowick}, 
@@ -742,24 +755,8 @@ Obtaining information on condition of tissue microstructures (such as myelin, in
 \end{participants}
 Demyelination, axonal damage and inflammation are critical indicators of the onset and progress of neurodegenerative diseases such as multiple sclerosis (MS) in patients. Due to physical limitations of imaging such as acquisition time and imaging resolution, a voxel in a MR image is heterogeneous in terms of tissue microstructure such as myelin, axons, intra and extra cellular fluids and free water. We present a multi-compartment tissue model which estimates the water fraction (WF) of tissues with short, medium and high T2 relaxation times in a T2 relaxometry MRI voxel. The proposed method is validated on test-retest data of healthy controls. This model was then used to study longitudinal trends of the tissue microstructures for two sub-regions of the lesions: gadolinium enhanced (E+) and non-enhanced (L−) regions of MS lesions in 10 MS patients over a period of three years. The water fraction values in E+ and L− regions were found to be significantly different (p < 0.05) over the period of first three months. The results of this study also showed that the estimates of the proposed T2 relaxometry model on brain tissue microstructures have potential to distinguish between regions undergoing active blood brain barrier breakdown from the other regions of the lesion~\cite{chatterjee:hal-01837974}.
 
-\subsection{Resting-state ASL : Toward an optimal sequence duration}
-\begin{participants}
-      \pers{Corentin}{Vallée}
-      \pers{Pierre}{Maurel}, 
-      \pers{Isabelle}{Corouge},
-      \pers{Christian}{Barillot},
-\end{participants}
-Resting-state functional Arterial Spin Labeling (rs-fASL) in clinical daily practice and academic research stay discreet compared to resting-state BOLD. However, by giving direct access to cerebral blood flow maps, rs-fASL leads to significant clinical subject scaled application as CBF can be considered as a biomarker in common neuropathology. Our work here focuses on the link between overall quality of rs-fASL and duration of acquisition. To this end, we consider subject self-Default Mode Network (DMN), and assess DMN quality depletion compared to a gold standard DMN depending on the duration of acquisition~\cite{vallee:inserm-01935089}.
-
-
-\subsection{Optimal selection of diffusion-weighting gradient waveforms using compressed sensing and dictionary learning}
-\begin{participants}
-      \pers{Raphaël}{Truffet}
-      \pers{Emmanuel}{Caruyer}
-\end{participants}
-Acquisition sequences in diffusion MRI rely on the use time-dependent magnetic field gradients. Each gradient waveform encodes a diffusion weighted measure; a large number of such measurements are necessary for the in vivo reconstruction of microstructure parameters. We propose here a method to select only a subset of the measurements while being able to predict the unseen data using compressed sensing. We learn a dictionary using a training dataset generated with Monte-Carlo simulations; we then compare two different heuristics to select the measures to use for the prediction. We found that an undersampling strategy limiting the redundancy of the measures allows for a more accurate reconstruction when compared with random undersampling with similar sampling rate~\cite{truffet:inserm-01939066}.
-
-\subsection{Anisotropic similarity, a constrained affine transformation: Application to brain development analysis}
+\subsection{Atlases}
+\subsubsection{Anisotropic similarity, a constrained affine transformation: Application to brain development analysis}
 \begin{participants}
       \pers{A.}{Legouhy}
       \pers{O.}{Commowick}
@@ -768,6 +765,8 @@ Acquisition sequences in diffusion MRI rely on the use time-dependent magnetic f
 \end{participants}
 The study of brain development provides insights in the normal trend of brain evolution and enables early detection of abnormalities. We propose a method to quantify brain growth in three arbitrary orthogonal directions of the brain through linear registration. We introduce a 9 degrees of freedom transformation that gives the opportunity to extract scaling factors describing brain growth along those directions by registering a database of subjects in a common basis. We apply this framework to create longitudinal curves of scaling ratios along fixed orthogonal directions from 0 to 16 years highlighting anisotropic brain development~\cite{legouhy:inserm-01871274}.
 
+
+\subsection{Simultaneous EEG/fMRI}
 \subsection{Automatic Electrodes Detection during simultaneous EEG/fMRI acquisition}
 \begin{participants}
       \pers{M.}{Fleury}
@@ -777,57 +776,6 @@ The study of brain development provides insights in the normal trend of brain ev
       \pers{C.}{Barillot}
 \end{participants}
 Simultaneous EEG/fMRI acquisition allows to measure brain activity at high spatial-temporal resolution. The localisation ofEEG sources depends on several parameters including the position of the electrodes on the scalp. The position of the MRelectrodes during its acquisitions is obtained with the use of the UTE sequence allowing their visualisation. The retrieval ofthe electrodes consists in obtaining the volume where the electrodes are located by applying a sphere detectionalgorithm. We detect around 90\% of electrodes for each subject, and our UTE-based electrode detection showed anaverage position error of 3.7mm for all subjects~\cite{fleury:hal-01874815}.
-
-% TODO: olivier proposait en 1 ou 2
-\subsection{Objective Evaluation of Multiple Sclerosis Lesion Segmentation using a Data Management and Processing Infrastructure}
-\begin{participants}
-      \pers{O.}{Commowick},
-      \pers{A.}{Istace},
-      \pers{M.}{Kain},
-      \pers{B.}{Laurent},
-      \pers{F.}{Leray},
-      \pers{M.}{Simon},
-      \pers{S. C.}{Pop},
-      \pers{P.}{Girard},
-      \pers{R.}{Ameli},
-      \pers{J.-C.}{Ferré},
-      \pers{A.}{Kerbrat},
-      \pers{T.}{Tourdias},
-      \pers{F.}{Cervenansky},
-      \pers{T.}{Glatard},
-      \pers{J.}{Beaumont},
-      \pers{S.}{Doyle},
-      \pers{F.}{Forbes},
-      \pers{J.}{Knight},
-      \pers{A.}{Khademi},
-      \pers{A.}{Mahbod},
-      \pers{C.}{Wang},
-      \pers{R.}{Mckinley},
-      \pers{F.}{Wagner},
-      \pers{J.}{Muschelli},
-      \pers{E.}{Sweeney},
-      \pers{E.}{Roura},
-      \pers{X.}{Lladó},
-      \pers{M. M.}{Santos},
-      \pers{W. P.}{Santos},
-      \pers{A. G.}{Silva-Filho},
-      \pers{X.}{Tomas-Fernandez},
-      \pers{H.}{Urien},
-      \pers{I.}{Bloch},
-      \pers{S.}{Valverde}
-      \pers{M.}{Cabezas},
-      \pers{F. J.}{Vera-Olmos},
-      \pers{N.}{Malpica},
-      \pers{C. R. G.}{Guttmann},
-      \pers{S.}{Vukusic},
-      \pers{G.}{Edan},
-      \pers{M.}{Dojat},
-      \pers{M.}{Styner},
-      \pers{S. K.}{Warfield},
-      \pers{F.}{Cotton},
-      \pers{C.}{Barillot}
-\end{participants}
-We present a study of multiple sclerosis segmentation algorithms conducted at the international MICCAI 2016 challenge. This challenge was operated using a new open-science computing infrastructure. This allowed for the automatic and independent evaluation of a large range of algorithms in a fair and completely automatic manner. This computing infrastructure was used to evaluate thirteen methods of MS lesions segmentation, exploring a broad range of state-of-the-art algorithms, against a high-quality database of 53 MS cases coming from four centers following a common definition of the acquisition protocol. Each case was annotated manually by an unprecedented number of seven different experts. Results of the challenge highlighted that automatic algorithms, including the recent machine learning methods (random forests, deep learning,...), are still trailing human expertise on both detection and delineation criteria. In addition, we demonstrate that computing a statistically robust consensus of the algorithms performs closer to human expertise on one score (segmentation) although still trailing on detection scores~\cite{commowick:inserm-01847873}
 
 \subsection{A Bayes Hilbert Space for Compartment Model Computing in Diffusion MRI}
 \begin{participants}
@@ -993,6 +941,57 @@ The VisAGeS research team has a strong focus on applying the developed methodolo
 \end{module}
 
 \begin{module}{resultats}{res-03}{Research axis 3: Management of Information in Neuroimaging}
+
+% TODO: olivier proposait en 1 ou 2
+\subsection{Objective Evaluation of Multiple Sclerosis Lesion Segmentation using a Data Management and Processing Infrastructure}
+\begin{participants}
+      \pers{O.}{Commowick},
+      \pers{A.}{Istace},
+      \pers{M.}{Kain},
+      \pers{B.}{Laurent},
+      \pers{F.}{Leray},
+      \pers{M.}{Simon},
+      \pers{S. C.}{Pop},
+      \pers{P.}{Girard},
+      \pers{R.}{Ameli},
+      \pers{J.-C.}{Ferré},
+      \pers{A.}{Kerbrat},
+      \pers{T.}{Tourdias},
+      \pers{F.}{Cervenansky},
+      \pers{T.}{Glatard},
+      \pers{J.}{Beaumont},
+      \pers{S.}{Doyle},
+      \pers{F.}{Forbes},
+      \pers{J.}{Knight},
+      \pers{A.}{Khademi},
+      \pers{A.}{Mahbod},
+      \pers{C.}{Wang},
+      \pers{R.}{Mckinley},
+      \pers{F.}{Wagner},
+      \pers{J.}{Muschelli},
+      \pers{E.}{Sweeney},
+      \pers{E.}{Roura},
+      \pers{X.}{Lladó},
+      \pers{M. M.}{Santos},
+      \pers{W. P.}{Santos},
+      \pers{A. G.}{Silva-Filho},
+      \pers{X.}{Tomas-Fernandez},
+      \pers{H.}{Urien},
+      \pers{I.}{Bloch},
+      \pers{S.}{Valverde}
+      \pers{M.}{Cabezas},
+      \pers{F. J.}{Vera-Olmos},
+      \pers{N.}{Malpica},
+      \pers{C. R. G.}{Guttmann},
+      \pers{S.}{Vukusic},
+      \pers{G.}{Edan},
+      \pers{M.}{Dojat},
+      \pers{M.}{Styner},
+      \pers{S. K.}{Warfield},
+      \pers{F.}{Cotton},
+      \pers{C.}{Barillot}
+\end{participants}
+We present a study of multiple sclerosis segmentation algorithms conducted at the international MICCAI 2016 challenge. This challenge was operated using a new open-science computing infrastructure. This allowed for the automatic and independent evaluation of a large range of algorithms in a fair and completely automatic manner. This computing infrastructure was used to evaluate thirteen methods of MS lesions segmentation, exploring a broad range of state-of-the-art algorithms, against a high-quality database of 53 MS cases coming from four centers following a common definition of the acquisition protocol. Each case was annotated manually by an unprecedented number of seven different experts. Results of the challenge highlighted that automatic algorithms, including the recent machine learning methods (random forests, deep learning,...), are still trailing human expertise on both detection and delineation criteria. In addition, we demonstrate that computing a statistically robust consensus of the algorithms performs closer to human expertise on one score (segmentation) although still trailing on detection scores~\cite{commowick:inserm-01847873}
 
 \subsection{Open Science for the Neuroinformatics community}
 \begin{participants}
