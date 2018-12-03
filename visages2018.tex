@@ -687,6 +687,49 @@ Extraction and exploitation of complex imaging biomarkers involve an imaging pro
 \end{participants}
 Acquisition sequences in diffusion MRI rely on the use time-dependent magnetic field gradients. Each gradient waveform encodes a diffusion weighted measure; a large number of such measurements are necessary for the in vivo reconstruction of microstructure parameters. We propose here a method to select only a subset of the measurements while being able to predict the unseen data using compressed sensing. We learn a dictionary using a training dataset generated with Monte-Carlo simulations; we then compare two different heuristics to select the measures to use for the prediction. We found that an undersampling strategy limiting the redundancy of the measures allows for a more accurate reconstruction when compared with random undersampling with similar sampling rate~\cite{truffet:inserm-01939066}.
 
+\subsubsection{A Bayes Hilbert Space for Compartment Model Computing in Diffusion MRI}
+\begin{participants}
+      \pers{A.}{Stamm}
+      \pers{O.}{Commowick}
+      \pers{A.}{Menafoglio}
+      \pers{S. K.}{Warfield}
+\end{participants}
+The single diffusion tensor model for mapping the brain white matter microstructure has long been criticized as providing sensitive yet non-specific clinical biomarkers for neurodegenerative diseases because (i) voxels in diffusion images actually contain more than one homogeneous tissue population and (ii) diffusion in a single homogeneous tissue can be non-Gaussian. Analytic models for compartmental diffusion signals have thus naturally emerged but there is surprisingly little for processing such images (estimation, smoothing, registration, atlas-ing, statistical analysis). We propose to embed these signals into a Bayes Hilbert space that we properly define and motivate. This provides a unified framework for compartment diffusion image computing. Experiments show that (i) interpolation in Bayes space features improved robustness to noise compared to the widely used log-Euclidean space for tensors and (ii) it is possible to trace complex key pathways such as the pyramidal tract using basic deterministic tractography thanks to the combined use of Bayes interpolation and multi-compartment diffusion models~\cite{stamm:inserm-01937992}
+
+\subsubsection{Diffusion MRI as an imaging marker of depression from a large and homogenous population study}
+\begin{participants}
+      \pers{Julie}{Coloigner}
+      \pers{Jean-Marie}{Batail}
+      \pers{Isabelle}{Corouge}
+      \pers{Jean-Christophe}{Ferre}
+      \pers{Dominique}{Drapier}
+      \pers{Christian}{Barillot}
+\end{participants}
+Despite the extensive therapy options available for depression, up to 80\% of patients will suffer from a relapse. Consequently, understanding the neural correlates underlying the depression will optimize the diagnosis and treatment of individual depressed patients. The purpose of our study was to investigate alterations of white matter integrity in a large cohort of patients suffering from depression using diffusion tensor imaging. Our findings provide robust evidence that the reduction of white-matter integrity in the interhemispheric connections and fronto-limbic neuronal circuits may play an important role in depression pathogenesis.~\cite{coloigner:hal-01812093}
+
+\subsubsection{Diffusion MRI as a descriptive imaging marker of the pathogenesis of treatment-resistant depression}
+\begin{participants}
+      \pers{Julie}{Coloigner}
+      \pers{Jean-Marie}{Batail}
+      \pers{Isabelle}{Corouge}
+      \pers{Jean-Christophe}{Ferre}
+      \pers{Dominique}{Drapier}
+      \pers{Christian}{Barillot}
+\end{participants}
+Despite the extensive therapy options available for depression, treatment-resistant depression (TRD) occurs in 20-30\% of depressed patients. Consequently, identification of neural changes in TRD could support to better understand the mechanism of resistance and to improve the treatment of individual depressed patients. We aimed to investigate the white-matter microstructure in a sample of depressed patients in which response to treatment was subsequently evaluated 6 months after. Our findings suggest the abnormalities of the white-matter integrity in multiple white matter tracts, such as anterior limb of internal capsule and genu of corpus may play a role in the pathogenesis of treatment-resistant depression.~\cite{coloigner:hal-01812087}
+
+\subsubsection{White matter connectivity analysis in patients suffering from depression.
+}
+\begin{participants}
+      \pers{Julie}{Coloigner}
+      \pers{Jean-Marie}{Batail}
+      \pers{Isabelle}{Corouge}
+      \pers{Dominique}{Drapier}
+      \pers{Christian}{Barillot}
+\end{participants}
+*TODO*~\cite{coloigner:hal-01890087}
+
+
 \subsection{Arterial Spin Labeling}
 \subsubsection{Patch-Based Super-Resolution of Arterial Spin Labeling Magnetic Resonance Images}
 \begin{participants}
@@ -767,7 +810,7 @@ The study of brain development provides insights in the normal trend of brain ev
 
 
 \subsection{Simultaneous EEG/fMRI}
-\subsection{Automatic Electrodes Detection during simultaneous EEG/fMRI acquisition}
+\subsubsection{Automatic Electrodes Detection during simultaneous EEG/fMRI acquisition}
 \begin{participants}
       \pers{M.}{Fleury}
       \pers{P.}{Maurel}
@@ -777,57 +820,15 @@ The study of brain development provides insights in the normal trend of brain ev
 \end{participants}
 Simultaneous EEG/fMRI acquisition allows to measure brain activity at high spatial-temporal resolution. The localisation ofEEG sources depends on several parameters including the position of the electrodes on the scalp. The position of the MRelectrodes during its acquisitions is obtained with the use of the UTE sequence allowing their visualisation. The retrieval ofthe electrodes consists in obtaining the volume where the electrodes are located by applying a sphere detectionalgorithm. We detect around 90\% of electrodes for each subject, and our UTE-based electrode detection showed anaverage position error of 3.7mm for all subjects~\cite{fleury:hal-01874815}.
 
-\subsection{A Bayes Hilbert Space for Compartment Model Computing in Diffusion MRI}
-\begin{participants}
-      \pers{A.}{Stamm}
-      \pers{O.}{Commowick}
-      \pers{A.}{Menafoglio}
-      \pers{S. K.}{Warfield}
-\end{participants}
-The single diffusion tensor model for mapping the brain white matter microstructure has long been criticized as providing sensitive yet non-specific clinical biomarkers for neurodegenerative diseases because (i) voxels in diffusion images actually contain more than one homogeneous tissue population and (ii) diffusion in a single homogeneous tissue can be non-Gaussian. Analytic models for compartmental diffusion signals have thus naturally emerged but there is surprisingly little for processing such images (estimation, smoothing, registration, atlas-ing, statistical analysis). We propose to embed these signals into a Bayes Hilbert space that we properly define and motivate. This provides a unified framework for compartment diffusion image computing. Experiments show that (i) interpolation in Bayes space features improved robustness to noise compared to the widely used log-Euclidean space for tensors and (ii) it is possible to trace complex key pathways such as the pyramidal tract using basic deterministic tractography thanks to the combined use of Bayes interpolation and multi-compartment diffusion models~\cite{stamm:inserm-01937992}
-
-
-\subsection{Diffusion MRI as an imaging marker of depression from a large and homogenous population study}
-\begin{participants}
-      \pers{Julie}{Coloigner}
-      \pers{Jean-Marie}{Batail}
-      \pers{Isabelle}{Corouge}
-      \pers{Jean-Christophe}{Ferre}
-      \pers{Dominique}{Drapier}
-      \pers{Christian}{Barillot}
-\end{participants}
-Despite the extensive therapy options available for depression, up to 80\% of patients will suffer from a relapse. Consequently, understanding the neural correlates underlying the depression will optimize the diagnosis and treatment of individual depressed patients. The purpose of our study was to investigate alterations of white matter integrity in a large cohort of patients suffering from depression using diffusion tensor imaging. Our findings provide robust evidence that the reduction of white-matter integrity in the interhemispheric connections and fronto-limbic neuronal circuits may play an important role in depression pathogenesis.~\cite{coloigner:hal-01812093}
-
-\subsection{Diffusion MRI as a descriptive imaging marker of the pathogenesis of treatment-resistant depression}
-\begin{participants}
-      \pers{Julie}{Coloigner}
-      \pers{Jean-Marie}{Batail}
-      \pers{Isabelle}{Corouge}
-      \pers{Jean-Christophe}{Ferre}
-      \pers{Dominique}{Drapier}
-      \pers{Christian}{Barillot}
-\end{participants}
-Despite the extensive therapy options available for depression, treatment-resistant depression (TRD) occurs in 20-30\% of depressed patients. Consequently, identification of neural changes in TRD could support to better understand the mechanism of resistance and to improve the treatment of individual depressed patients. We aimed to investigate the white-matter microstructure in a sample of depressed patients in which response to treatment was subsequently evaluated 6 months after. Our findings suggest the abnormalities of the white-matter integrity in multiple white matter tracts, such as anterior limb of internal capsule and genu of corpus may play a role in the pathogenesis of treatment-resistant depression.~\cite{coloigner:hal-01812087}
-
-\subsection{White matter connectivity analysis in patients suffering from depression.
-}
-\begin{participants}
-      \pers{Julie}{Coloigner}
-      \pers{Jean-Marie}{Batail}
-      \pers{Isabelle}{Corouge}
-      \pers{Dominique}{Drapier}
-      \pers{Christian}{Barillot}
-\end{participants}
-*TODO*~\cite{coloigner:hal-01890087}
-
-\subsection{Validity of summary statistics-based mixed-effects group fMRI}
+\subsection{Inference in neuroimaging}
+\subsubsection{Validity of summary statistics-based mixed-effects group fMRI}
 \begin{participants}
       \pers{Camille}{Maumet}
       \pers{Thomas}{Nichols}
 \end{participants}
 Statistical analysis of multi-subject functional Magnetic Resonance Imaging (fMRI) data is traditionally done using either: 1) a mixed-effects GLM (MFX GLM) where within-subject variance estimates are used and incorporated into per-subject weights or 2) a random-effects General linear model (GLM) (RFX GLM) where within-subject variance estimates are not used. Both approaches are implemented and available in major neuroimaging software packages including: SPM (MFX analysis; 2nd-Level statistics), FSL (FLAME; OLS) and AFNI (3dMEMA; 3dttest++). While MFX GLM provides the most efficient statistical estimate, its properties are only guaranteed in large samples, and it has been shown that RFX GLM is a valid alternative for one-sample group analyses in fMRI [1]. We recently showed that MFX GLM for image-based meta-analysis could lead to invalid results in small-samples. Here, we investigate whether this issue also affects group fMRI~\cite{maumet:inserm-01887911}.
 
-\subsection{Choosing a practical and valid Image-Based Meta-Analysis}
+\subsubsection{Choosing a practical and valid Image-Based Meta-Analysis}
 \begin{participants}
       \pers{Camille}{Maumet}
       \pers{Thomas}{Nichols}
