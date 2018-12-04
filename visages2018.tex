@@ -932,8 +932,9 @@ The VisAGeS research team has a strong focus on applying the developed methodolo
 
 \begin{module}{resultats}{res-03}{Research axis 3: Management of Information in Neuroimaging}
 
+\subsection{Large-scale data analyses}
 % TODO: olivier proposait en 1 ou 2
-\subsection{Objective Evaluation of Multiple Sclerosis Lesion Segmentation using a Data Management and Processing Infrastructure}
+\subsubsection{Objective Evaluation of Multiple Sclerosis Lesion Segmentation using a Data Management and Processing Infrastructure}
 \begin{participants}
       \pers{O.}{Commowick},
       \pers{A.}{Istace},
@@ -983,9 +984,25 @@ The VisAGeS research team has a strong focus on applying the developed methodolo
 \end{participants}
 We present a study of multiple sclerosis segmentation algorithms conducted at the international MICCAI 2016 challenge. This challenge was operated using a new open-science computing infrastructure. This allowed for the automatic and independent evaluation of a large range of algorithms in a fair and completely automatic manner. This computing infrastructure was used to evaluate thirteen methods of MS lesions segmentation, exploring a broad range of state-of-the-art algorithms, against a high-quality database of 53 MS cases coming from four centers following a common definition of the acquisition protocol. Each case was annotated manually by an unprecedented number of seven different experts. Results of the challenge highlighted that automatic algorithms, including the recent machine learning methods (random forests, deep learning,...), are still trailing human expertise on both detection and delineation criteria. In addition, we demonstrate that computing a statistically robust consensus of the algorithms performs closer to human expertise on one score (segmentation) although still trailing on detection scores~\cite{commowick:inserm-01847873}
 
+\subsubsection{Same Data - Different Software - Different Results? Analytic Variability of Group fMRI Results}
+\begin{participants}
+      \pers{Alexander}{Bowring}
+      \pers{Camille}{Maumet}
+      \pers{Thomas}{Nichols}
+\end{participants}
+A wealth of analysis tools are available to fMRI researchers in order to extract patterns of task variation and, ultimately, understand cognitive function. However, this 'methodological plurality' comes with a drawback. While conceptually similar, two different analysis pipelines applied on the same dataset may not produce the same scientific results. Differences in methods, implementations across software packages, and even operating systems or software versions all contribute to this variability. Consequently, attention in the field has recently been directed to reproducibility and data sharing. Neuroimaging is currently experiencing a surge in initiatives to improve research practices and ensure that all conclusions inferred from an fMRI study are replicable. In this work, our goal is to understand how choice of software package impacts on analysis results. We use publically shared data from three published task fMRI neuroimaging studies, reanalyzing each study using the three main neuroimaging software packages, AFNI, FSL and SPM, using parametric and nonparametric inference. We obtain all information on how to process, analyze, and model each dataset from the publications. We make quantitative and qualitative comparisons between our replications to gauge the scale of variability in our results and assess the fundamental differences between each software package. While qualitatively we find broad similarities between packages, we also discover marked differences, such as Dice similarity coefficients ranging from 0.000-0.743 in comparisons of thresholded statistic maps between software. We discuss the challenges involved in trying to reanalyse the published studies, and highlight our own efforts to make this research reproducible~\cite{bowring:inserm-01933019,bowring:inserm-01760535}.
+
+\subsubsection{Detecting and Interpreting Heterogeneity and Publication Bias in Image-Based Meta-Analyses}
+\begin{participants}
+      \pers{Thomas}{Maullin-Sapey}
+      \pers{Camille}{Maumet}
+      \pers{Thomas}{Nichols}
+\end{participants}
+With the increase of data sharing, meta-analyses are becoming increasingly important in the neuroimaging community. They provide a quantitative summary of published results and heightened confidence due to higher statistical power. The gold standard approach to combine results from neuroimaging studies is an Image-Based Meta-Analysis (IBMA) [1] in which group-level maps from different studies are combined. Recently, we have introduced the IBMA toolbox, an extension for SPM that provides methods for combining image maps from multiple studies [2]. However, the current toolbox lacks diagnostic tools used to assess critical assumptions of meta-analysis, in particular whether there is inter-study variation requiring random-effects IBMA, and whether publication bias is present. Here, we present two new tools added to the IBMA toolbox to detect heterogeneity and to assess evidence of publication bias~\cite{maullinsapey:inserm-01933023}.
+
 
 % TODO: Could also go in 3
-\subsection{Statistical Shape Analysis of Large Datasets Based on Diffeomorphic Iterative Centroids}
+\subsubsection{Statistical Shape Analysis of Large Datasets Based on Diffeomorphic Iterative Centroids}
 \begin{participants}
       \pers{C.}{Cury}
       \pers{J.}{Glaunès}, 
@@ -998,8 +1015,8 @@ We present a study of multiple sclerosis segmentation algorithms conducted at th
 \end{participants}
 In this paper, we propose an approach for template-based shape analysis of large datasets, using diffeomorphic centroids as atlas shapes. Diffeomorphic centroid methods fit in the Large Deformation Diffeomorphic Metric Mapping (LDDMM) framework and use kernel metrics on currents to quantify surface dissimilarities. The statistical analysis is based on a Kernel Principal Component Analysis (Kernel PCA) performed on the set of initial momentum vectors which parametrize the deformations. We tested the approach on different datasets of hippocampal shapes extracted from brain magnetic resonance imaging (MRI), compared three different centroid methods and a variational template estimation. The largest dataset is composed of 1,000 surfaces, and we are able to analyse this dataset in 26 h using a diffeomorphic centroid. Our experiments demonstrate that computing diffeomorphic centroids in place of standard variational templates leads to similar shape analysis results and saves around 70\% of computation time. Furthermore, the approach is able to adequately capture the variability of hippocampal shapes with a reasonable number of dimensions, and to predict anatomical features of the hippocampus, only present in 17\% of the population, in healthy subjects.~\cite{cury:hal-01920263}.
 
-
-\subsection{Open Science for the Neuroinformatics community}
+\subsection{Infrastructures}
+\subsubsection{Open Science for the Neuroinformatics community}
 \begin{participants}
       \pers{Sorina}{Pop}
       \pers{Axel}{Bonnet}
@@ -1010,7 +1027,8 @@ In this paper, we propose an approach for template-based shape analysis of large
 \end{participants}
 The Neuroinformatics community in OpenAire-Connect is represented by members of the France Life Imaging (FLI) collaboration. In this context, we aim at leveraging OpenAire-Connect services and give our community members the possibility to easily publish and exchange research artefacts from FLI platforms, such as VIP and Shanoir. This will enable open and reproducible science, since literature, data, and methods can be linked, retrieved, and replayed by all the members of the community~\cite{pop:inserm-01846994}.
 
-\subsection{Interoperability with Boutiques and CARMIN}
+\subsection{Standardisation and interoperability}
+\subsubsection{Interoperability with Boutiques and CARMIN}
 \begin{participants}
       \pers{Sorina}{Pop}
       \pers{Axel}{Bonnet}
@@ -1021,7 +1039,7 @@ The Neuroinformatics community in OpenAire-Connect is represented by members of 
 \end{participants}
 A growing number of platforms and tools have lately been developed to meet the needs of various scientific communities. Most of these solutions are optimized to specific requirements from different user groups, leading to technological fragmentation and lack of interoperability. In our quest of open and reproducible science, we propose two complementary tools, Boutiques and CARMIN, providing cross-platform interoperability for scientific applications, data sharing and processing~\cite{pop:inserm-01846997}.
 
-\subsection{A standardised representation for non-parametric fMRI results}
+\subsubsection{A standardised representation for non-parametric fMRI results}
 \begin{participants}
       \pers{Camille}{Maumet}
       \pers{Guillaume}{Flandin},
@@ -1034,7 +1052,7 @@ A growing number of platforms and tools have lately been developed to meet the n
 \end{participants}
 Reuse of data collected and analysed at another site is becoming more prevalent in the neuroimaging community (cf. for example (Milham et al. 2017)) but this process usually relies on intensive data and metadata curation. Given the ever-increasing number of research datasets produced and shared, it is desirable to rely on standards that will enable automatic data and metadata retrieval for large-scale analyses (Wilkinson et al. 2016). We recently introduced NIDM-Results (Maumet et al. 2016), a data model to represent and publish data and metadata created as part of a mass univariate neuroimaging study (typically functional magnetic resonance imaging). Here we extend this model to allow for the representation of non-parametric analyses and we introduce a JSON API that will facilitate export into NIDM-Results~\cite{maumet:inserm-01828914}.
 
-\subsection{Development of an Ontology for the INCF Neuroimaging Data Model (NIDM)}
+\subsubsection{Development of an Ontology for the INCF Neuroimaging Data Model (NIDM)}
 \begin{participants}
       \pers{K. G.}{Helmer}, 
       \pers{K. B.}{David}, 
@@ -1047,21 +1065,6 @@ Reuse of data collected and analysed at another site is becoming more prevalent 
 \end{participants}
 The successful reuse of shared data relies on the existence of easily-available well-described metadata [1]. The metadata, as a rich description of the data, must capture information on how the data was acquired, processed and analyzed. The terms used to describe the data should be chosen with a logical, consistent framework in mind and include definitions to avoid ambiguity. In addition, a lexicon or ontology should reuse terms from existing efforts as much as possible [2]~\cite{helmer:inserm-01932994}.
 
-\subsection{Same Data - Different Software - Different Results? Analytic Variability of Group fMRI Results}
-\begin{participants}
-      \pers{Alexander}{Bowring}
-      \pers{Camille}{Maumet}
-      \pers{Thomas}{Nichols}
-\end{participants}
-A wealth of analysis tools are available to fMRI researchers in order to extract patterns of task variation and, ultimately, understand cognitive function. However, this 'methodological plurality' comes with a drawback. While conceptually similar, two different analysis pipelines applied on the same dataset may not produce the same scientific results. Differences in methods, implementations across software packages, and even operating systems or software versions all contribute to this variability. Consequently, attention in the field has recently been directed to reproducibility and data sharing. Neuroimaging is currently experiencing a surge in initiatives to improve research practices and ensure that all conclusions inferred from an fMRI study are replicable. In this work, our goal is to understand how choice of software package impacts on analysis results. We use publically shared data from three published task fMRI neuroimaging studies, reanalyzing each study using the three main neuroimaging software packages, AFNI, FSL and SPM, using parametric and nonparametric inference. We obtain all information on how to process, analyze, and model each dataset from the publications. We make quantitative and qualitative comparisons between our replications to gauge the scale of variability in our results and assess the fundamental differences between each software package. While qualitatively we find broad similarities between packages, we also discover marked differences, such as Dice similarity coefficients ranging from 0.000-0.743 in comparisons of thresholded statistic maps between software. We discuss the challenges involved in trying to reanalyse the published studies, and highlight our own efforts to make this research reproducible~\cite{bowring:inserm-01933019,bowring:inserm-01760535}.
-
-\subsection{Detecting and Interpreting Heterogeneity and Publication Bias in Image-Based Meta-Analyses}
-\begin{participants}
-      \pers{Thomas}{Maullin-Sapey}
-      \pers{Camille}{Maumet}
-      \pers{Thomas}{Nichols}
-\end{participants}
-With the increase of data sharing, meta-analyses are becoming increasingly important in the neuroimaging community. They provide a quantitative summary of published results and heightened confidence due to higher statistical power. The gold standard approach to combine results from neuroimaging studies is an Image-Based Meta-Analysis (IBMA) [1] in which group-level maps from different studies are combined. Recently, we have introduced the IBMA toolbox, an extension for SPM that provides methods for combining image maps from multiple studies [2]. However, the current toolbox lacks diagnostic tools used to assess critical assumptions of meta-analysis, in particular whether there is inter-study variation requiring random-effects IBMA, and whether publication bias is present. Here, we present two new tools added to the IBMA toolbox to detect heterogeneity and to assess evidence of publication bias~\cite{maullinsapey:inserm-01933023}.
 
 \end{module}
 
