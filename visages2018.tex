@@ -820,6 +820,16 @@ The study of brain development provides insights in the normal trend of brain ev
 \end{participants}
 Simultaneous EEG/fMRI acquisition allows to measure brain activity at high spatial-temporal resolution. The localisation ofEEG sources depends on several parameters including the position of the electrodes on the scalp. The position of the MRelectrodes during its acquisitions is obtained with the use of the UTE sequence allowing their visualisation. The retrieval ofthe electrodes consists in obtaining the volume where the electrodes are located by applying a sphere detectionalgorithm. We detect around 90\% of electrodes for each subject, and our UTE-based electrode detection showed anaverage position error of 3.7mm for all subjects~\cite{fleury:hal-01874815}.
 
+\subsubsection{Automated Electrodes Detection during simultaneous EEG/fMRI}
+\begin{participants}
+      \pers{M.}{Fleury}
+      \pers{C.}{Barillot}
+      \pers{E.}{Bannier}
+      \pers{M.}{Mano}
+      \pers{P.}{Maurel}      
+\end{participants}
+The coupling of Electroencephalography (EEG) and functional magnetic resonance imaging (fMRI) enables the measure of brain activity at high spatial and temporal resolution. The localisation of EEG sources depends on several parameters including the knowledge of the position of the electrodes on the scalp. An accurate knowledge about this information is important for source reconstruction. Currently, when acquiring EEG and fMRI together, the position of the electrodes is generally estimated according to fiducial points by using a template. In the context of simultaneous EEG/fMRI acquisition, a natural idea is to use magnetic resonance (MR) images to localise EEG electrodes. However, most MR compatible electrodes are built to be almost invisible on MR Images. Taking advantage of a recently proposed Ultra short Echo Time (UTE) sequence, we introduce a fully automatic method to detect and label those electrodes in MR images. Our method was tested on 8 subjects wearing a 64-channel EEG cap. This automated method showed an average detection accuracy of 94\% and the average position error was 3.1 mm. These results suggest that the proposed method has potential for determining the position of the electrodes during simultaneous EEG/fMRI acquisition with a very light cost procedure." BioRxiv waiting for Frontiers in ICA~\cite{fleury:hal-01939735}.
+
 \subsection{Inference in neuroimaging}
 \subsubsection{Validity of summary statistics-based mixed-effects group fMRI}
 \begin{participants}
