@@ -835,6 +835,20 @@ Statistical analysis of multi-subject functional Magnetic Resonance Imaging (fMR
 \end{participants}
 Meta-analysis provides a quantitative approach to summarise the rich functional Magnetic Resonance Imaging (fMRI) literature. When image data is available for each study, the optimal approach is to perform an Image-Based Meta-Analysis (IBMA) [1]. A number of IBMA approaches have been proposed including combination of standardised statistics (Z's), just effect estimates (E's) or both effect estimates and their standard errors (SE's). While using both E’s \& SE’s and estimating between-study variance should be optimal, the methods are not guaranteed to work for small number of studies. Also, often only standardised estimates are shared, reducing the possible meta-analytic approaches. Finally, because the BOLD signal is non-quantitative care has to be taken in order to insure that E's are expressed in the same units [2,3], especially when combining data from different software packages. Given the growing interest in data sharing in the neuroimaging community there is a need to identify what is the minimal data to be shared in order to allow for future IBMAs. Here, we investigate the validity of 8 IBMA approaches~\cite{maumet:inserm-01933032}.
 
+\subsection{Shape analyses}
+\subsubsection{Statistical Shape Analysis of Large Datasets Based on Diffeomorphic Iterative Centroids}
+\begin{participants}
+      \pers{C.}{Cury}
+      \pers{J.}{Glaunès}, 
+      \pers{R.}{Toro},
+      \pers{M.}{Chupin},
+      \pers{G.}{Schumann},
+      \pers{V.}{Frouin},
+      \pers{J.-B.}{Poline},
+      \pers{O.}{Colliot},
+\end{participants}
+In this paper, we propose an approach for template-based shape analysis of large datasets, using diffeomorphic centroids as atlas shapes. Diffeomorphic centroid methods fit in the Large Deformation Diffeomorphic Metric Mapping (LDDMM) framework and use kernel metrics on currents to quantify surface dissimilarities. The statistical analysis is based on a Kernel Principal Component Analysis (Kernel PCA) performed on the set of initial momentum vectors which parametrize the deformations. We tested the approach on different datasets of hippocampal shapes extracted from brain magnetic resonance imaging (MRI), compared three different centroid methods and a variational template estimation. The largest dataset is composed of 1,000 surfaces, and we are able to analyse this dataset in 26 h using a diffeomorphic centroid. Our experiments demonstrate that computing diffeomorphic centroids in place of standard variational templates leads to similar shape analysis results and saves around 70\% of computation time. Furthermore, the approach is able to adequately capture the variability of hippocampal shapes with a reasonable number of dimensions, and to predict anatomical features of the hippocampus, only present in 17\% of the population, in healthy subjects.~\cite{cury:hal-01920263}.
+
 \end{module}
 
 
@@ -999,21 +1013,6 @@ A wealth of analysis tools are available to fMRI researchers in order to extract
       \pers{Thomas}{Nichols}
 \end{participants}
 With the increase of data sharing, meta-analyses are becoming increasingly important in the neuroimaging community. They provide a quantitative summary of published results and heightened confidence due to higher statistical power. The gold standard approach to combine results from neuroimaging studies is an Image-Based Meta-Analysis (IBMA) [1] in which group-level maps from different studies are combined. Recently, we have introduced the IBMA toolbox, an extension for SPM that provides methods for combining image maps from multiple studies [2]. However, the current toolbox lacks diagnostic tools used to assess critical assumptions of meta-analysis, in particular whether there is inter-study variation requiring random-effects IBMA, and whether publication bias is present. Here, we present two new tools added to the IBMA toolbox to detect heterogeneity and to assess evidence of publication bias~\cite{maullinsapey:inserm-01933023}.
-
-
-% TODO: Could also go in 3
-\subsubsection{Statistical Shape Analysis of Large Datasets Based on Diffeomorphic Iterative Centroids}
-\begin{participants}
-      \pers{C.}{Cury}
-      \pers{J.}{Glaunès}, 
-      \pers{R.}{Toro},
-      \pers{M.}{Chupin},
-      \pers{G.}{Schumann},
-      \pers{V.}{Frouin},
-      \pers{J.-B.}{Poline},
-      \pers{O.}{Colliot},
-\end{participants}
-In this paper, we propose an approach for template-based shape analysis of large datasets, using diffeomorphic centroids as atlas shapes. Diffeomorphic centroid methods fit in the Large Deformation Diffeomorphic Metric Mapping (LDDMM) framework and use kernel metrics on currents to quantify surface dissimilarities. The statistical analysis is based on a Kernel Principal Component Analysis (Kernel PCA) performed on the set of initial momentum vectors which parametrize the deformations. We tested the approach on different datasets of hippocampal shapes extracted from brain magnetic resonance imaging (MRI), compared three different centroid methods and a variational template estimation. The largest dataset is composed of 1,000 surfaces, and we are able to analyse this dataset in 26 h using a diffeomorphic centroid. Our experiments demonstrate that computing diffeomorphic centroids in place of standard variational templates leads to similar shape analysis results and saves around 70\% of computation time. Furthermore, the approach is able to adequately capture the variability of hippocampal shapes with a reasonable number of dimensions, and to predict anatomical features of the hippocampus, only present in 17\% of the population, in healthy subjects.~\cite{cury:hal-01920263}.
 
 \subsection{Infrastructures}
 \subsubsection{Open Science for the Neuroinformatics community}
